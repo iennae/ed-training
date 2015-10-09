@@ -20,10 +20,9 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 
 # Katherine Daniels
 
-* Web Operations Engineer, Etsy
+* Senior Operations Engineer, Etsy
 * Co-author of "Effective Devops"
 * DevopsDays NYC Organizer
-* Ladies Who Linux NYC Organizer
 * Ship Show Podcast Co-host
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat.jpg)
@@ -34,11 +33,11 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 
 # Communication
 
-* Jennifer Davis 
-   Twitter: @sigje 
+* Jennifer Davis
+   Twitter: @sigje
    Email: sparklydevops@gmail.com
-* Katherine Daniels 
-   Twitter: @beerops 
+* Katherine Daniels
+   Twitter: @beerops
    Email: sparklyyakshaver@gmail.com
 
 ### Twitter: #effectivedevops
@@ -82,8 +81,10 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 
 # Network Connectivity
 
-Network Name: 
-Access Code: 
+Network Name:
+Access Code:
+
+Local Downloads: http://10.10.32.101
 
 ---
 
@@ -121,12 +122,12 @@ Time: 10 minutes
 
 ## What is Devops
 
-Cultural movement that seeks 
+Cultural movement that seeks to:
 
-* to change how individuals work, 
-* value the diversity of work done, 
-* develop conscious decisions in acceleration, 
-* plan for scale, and 
+* change how individuals work,
+* value the diversity of work done,
+* develop conscious decisions in acceleration,
+* plan for scale, and
 * measure the effect of social and technical change.
 
 
@@ -230,7 +231,7 @@ Cultural movement that seeks
 
 ---
 
-## Recognizing your Devops Narrative 
+## Recognizing your Devops Narrative
 
 ---
 
@@ -249,7 +250,7 @@ Cultural movement that seeks
 
 # Team
 
-* Common purpose 
+* Common purpose
 * Defined beliefs
 * Empowered
 
@@ -257,13 +258,13 @@ Cultural movement that seeks
 
 ---
 
-### Crazy Chat from Alan Cyment
+### Careless Conversations (inspired by Alan Cyment)
 
 * Pair up
 * Select one person to go first.
 * For one minute, speaker talks about something passionate about. Listener stays seated, quiet, and acts disinterested.
 * Switch roles and repeat.
-* Repeat until both people have done this twice. 
+* Repeat until both people have done this twice.
 
 Time: 5 minutes
 
@@ -271,7 +272,7 @@ Time: 5 minutes
 
 ---
 
-## Crazy Chat
+## Careless Conversations
 
 * How does it feel not to be listened to?
 * How does it feel to ignore someone?
@@ -280,8 +281,8 @@ Time: 5 minutes
 
 ## Cultivating Empathy
 
-* Collect stories 
-* Listen 
+* Collect stories
+* Listen
 * Circle back
 
 ^ K: this is how you transform a group into a team
@@ -305,13 +306,13 @@ Time: 5 minutes
 
 -- George Howard
 
-^ K: Work is meaningful when people see themselves as active participants. Sharing story is critical part of building resilience. 
+^ K: Work is meaningful when people see themselves as active participants. Sharing story is critical part of building resilience.
 
 ---
 
 # Small vs Large teams
 
-* Large teams - roles may be highly segregated 
+* Large teams - roles may be highly segregated
 * Small teams - one person may be responsible for many roles
 
 ^ K
@@ -377,7 +378,7 @@ Time: 5 minutes
 * Management buy in
  * Training
  * Minimize 'pushing'
-* Team sync 
+* Team sync
 
 ---
 
@@ -430,7 +431,7 @@ Work that is
 
 # Interrupts
 
-* Non planned work that comes in 
+* Non planned work that comes in
  * customer request
  * incident
  * request for help from coworker
@@ -469,7 +470,7 @@ Discuss with your team:
 * Everyone is a leader
 
 ^ K: Model what you're currently doing: how does work get done, what states do things get into, how do things get blocked
-^ Everyone on the team is empowered to pull things, to suggest change, to create their stories 
+^ Everyone on the team is empowered to pull things, to suggest change, to create their stories
 
 ---
 
@@ -497,7 +498,7 @@ Discuss with your team:
 
 # Limit WIP
 
-* Pull (don't push) 
+* Pull (don't push)
 
 ^ K
 
@@ -515,7 +516,7 @@ Discuss with your team:
 # Make Policies Explicit
 
 * Document processes
-* Group signoff 
+* Group signoff
 
 ^ K
 
@@ -523,7 +524,7 @@ Discuss with your team:
 
 # Implement Feedback Loops
 
-* Collaboration 
+* Collaboration
 * Retrospectives
 
 ^ K (tie back to fluxx)
@@ -765,7 +766,7 @@ end
 
 ---
 
-# Resources 
+# Resources
 
 A resource is a statement of policy that:
 
@@ -815,7 +816,7 @@ A resource is a statement of policy that:
 # Environments
 
 * Abstraction models workflow
-* Name 
+* Name
 * Description
 * Cookbook version pinning
 
@@ -1124,7 +1125,7 @@ Time: 10 minutes
 
 # Retrospective on Assignment 3
 
-Time: 15 minutes 
+Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
@@ -1216,8 +1217,8 @@ Time: 20 minutes
 ```
 define command {
     command_name    check_mongodb_query
-    command_line    $USER1$/nagios-plugin-mongodb/check_mongodb.py 
-		    -H $HOSTADDRESS$ -A $ARG1$ -P $ARG2$ 
+    command_line    $USER1$/nagios-plugin-mongodb/check_mongodb.py
+		    -H $HOSTADDRESS$ -A $ARG1$ -P $ARG2$
 		    -W $ARG3$ -C $ARG4$ -q $ARG5$
 }
 
@@ -1326,7 +1327,7 @@ define servicedependency{
 * Also better for customers
 * More visibility into issues
 
---- 
+---
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat9.jpg)
 
@@ -1350,7 +1351,7 @@ Time: 20 minutes
 
 # Review
 
-* Recognizing your Devops Narrative 
+* Recognizing your Devops Narrative
 * Application Deployment Planning
 * Infrastructure as code
 * Introducing repeatable, testable change
