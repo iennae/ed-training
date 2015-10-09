@@ -4,7 +4,7 @@
 
 In this exercise each participant configures and tests a local development environment.
 
-## Connect to Node 
+## Connect to Node (Everyone)
 
 * ssh chef@NODE 
 
@@ -28,7 +28,7 @@ $ git config --global user.name "Jennifer Davis"
 $ git config --global user.email "sparklydevops@gmail.com"
 ```
 
-## Verify .gitconfig creation
+## Verify .gitconfig creation (Everyone)
 
 ```
    cat ~/.gitconfig
@@ -43,7 +43,9 @@ Example:
    email = sparklydevops@gmail.com
 ```
 
-## Set your preferred git editor
+## Set your preferred git editor (Everyone)
+
+If you don't set your preferred editor, it will use the default text editor for the system.
 
 * emacs
 * nano
@@ -56,6 +58,24 @@ Example:
 Example:
 ```
 $ git config --global core.editor nano
+```
+
+## Verify the configuration (Everyone)
+
+```
+   git config --list
+```
+
+Example Output:
+
+```
+[chef@ip-172-31-11-246 hello_world]$ git config --list
+user.name=Jennifer Davis
+user.email=sparklydevops@gmail.com
+core.editor=nano
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
 ```
 
 ## Create a Project Directory (Everyone)
@@ -82,6 +102,59 @@ Initial commit
 
 nothing to commit (create/copy files and use "git add" to track)
 ```
+
+Create hello.txt file:
+
+```
+   echo "hello world" >> hello.txt
+   git status
+   git add hello.txt
+   git status
+   git commit -m "creation of hello.txt file"
+   git status
+
+```
+
+Example of first status output:
+
+```
+ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+   hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+Example of second status output:
+
+```
+[chef@ip-172-31-11-246 hello_world]$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+   new file:   hello.txt
+```
+
+Example of third status output:
+
+```
+[chef@ip-172-31-11-246 hello_world]$ git status
+On branch master
+nothing to commit, working directory clean
+```
+
+## Add a text file (Everyone)
+
 
 * mkdir TEAM
 * cd TEAM
