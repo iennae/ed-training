@@ -166,15 +166,34 @@ If you want to skip the added burden of entering your username and password each
 
 https://help.github.com/articles/generating-ssh-keys/
 
+Example output of successful setup of keys:
+
+```
+ [chef@ip-172-31-11-246 wd]$ ssh -T git@github.com
+Hi sparklydevops! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
 ## Share your GitHub identity with your group. 
 
 ## Create a new remote repo
 
+In a web browser, after logging into Github, you'll see an option to create a "New Repository" on the lower right.
+
+Click on New Repository:
+
 ![Once logged in, click New repository](images/assign_1/1-click_new_repo.png "Once logged in, click New repository")
+
+In the repository name field, enter `ed-lab1` and click the Initilize README option.: 
+
 ![In the Repository name field, ed-lab1](images/assign_1/2-name_ed-lab1.png "In the Repository name field, ed-lab1 ")
 ![Make sure to click the Initilize README](images/assign_1/3-init_with_readme.png "Make sure to click the Initilize README")
+
+Once you have created the repo, you will see a screen like this:
+
 ![After clicking Create Repo](images/assign_1/4-after_create_repo.png "After clicking Create Repo")
+
+On the lower right you will see the clone url. You can leave it with https and enter your credentials each time, or you can switch to ssh by clicking on SSH if you've set up your ssh keys.
+
 ![Click on SSH and grab the SSH clone url](images/assign_1/5-change_to_ssh_clone_url.png "Click on SSH and grab the SSH clone url")
 
 On the node:
@@ -187,52 +206,23 @@ On the node:
 Example:
 ```
 [chef@ip-172-31-11-246 wd]$ git clone git@github.com:sparklydevops/ed-lab1.git
+Cloning into 'ed-lab1'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
 ```
 
-## Provide GitHub identities to your instructors. 
-
-* Jennifer Davis, iennae
-* Katherine Daniels, kdaniels
- 
-## Accept invitation to GitHub JoeNGo Organization (Everyone)
-
-Start on this step once your group's Notetaker has provided the GitHub identities for your group to your instructors.
-
-* Visit https://github.com/JoeNGo
-* Accept invitation.
-
-## Verify access to repo. (Everyone)
-
-### Create a Working Directory (wd)
-* cd ~
-* mkdir wd
-* cd wd
-
-### Clone the initial-git-test repo 
-
-* git clone https://github.com/JoeNGo/initial-git-test.git
-* cd initial-git-test
-* git remote -v
-* update README.md with your name and email address.
-* git status
-
-### Verify that you see that you have modifed README.md 
+Check the contents of the repository you just cloned
 
 ```
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#  modified:   README.md
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-
+  cd ~/wd/ed-lab1
+  ls
+  git remote -v
 ```
 
-* git add README.md
-* git commit -m "added name"
-* git status
+
+
 
 ### Verify that your local repo is ready to be pushed to the remote repo.
 
