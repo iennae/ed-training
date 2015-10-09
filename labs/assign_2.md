@@ -26,7 +26,7 @@
 
 ## Clone the ed-lab2 repo to your node
 
-Clone your teams repo to your node. Add a file to the repo with your firstname as the file name. 
+Clone your teams repo to your node. Add a file to the repo with your firstname as the file name. Replace FIRSTNAME in the following with your first name.
 
 ```
    cd ~/wd
@@ -112,4 +112,4 @@ Merge made by the 'recursive' strategy.
 ## Outcomes 
 
 * Creation of ed-lab2 repo
-* Firstname.txt files created for each of your group within the ed-lab2 repo.
+* First name .txt files created for each of your group within the ed-lab2 repo.

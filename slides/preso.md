@@ -618,9 +618,7 @@ Discuss with your team:
 
 # Lab 1
 
-[Effective Devops](http://bit.ly/1JVuLh4)
-
-http://bit.ly/1JVuLh4
+[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_1.md)
 
 Time: 15 minutes
 
@@ -636,9 +634,7 @@ Time: 15 minutes
 
 # Lab 2
 
-[Effective Devops](http://bit.ly/1JVuLh4)
-
-http://bit.ly/1JVuLh4
+[Lab 2](https://github.com/iennae/ed-training/blob/master/labs/assign_2.md)
 
 Time: 15 minutes
 
@@ -938,7 +934,7 @@ Example:
 
 ---
 
-# Assignment 2
+# Lab 3
 
 Time: 20 minutes
 
