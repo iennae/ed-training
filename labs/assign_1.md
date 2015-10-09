@@ -173,7 +173,7 @@ Example output of successful setup of keys:
 Hi sparklydevops! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-## Share your GitHub identity with your group. 
+
 
 ## Create a new remote repo
 
