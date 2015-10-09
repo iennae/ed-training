@@ -114,6 +114,8 @@ service 'httpd' do
   action [ :enable, :start ]
 end
 
+```
+
 
 Edit the default recipe:
 
@@ -121,7 +123,6 @@ Edit the default recipe:
    nano recipes/default.rb
 ```
 
-This is a good practice of 
 Update the contents of the `default.rb` recipe with the following contents:
 
 
