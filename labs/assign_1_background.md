@@ -8,6 +8,25 @@ ssh, Secure Shell is a way to connect to remote nodes. There are clients availab
 
 We have pre-established a privileged account on the remote node, and providing you with a username and password. When you use the ssh client, whether ssh on Mac or a GUI like putty on Windows, you are connecting to that node. 
 
+## Basic Unix Commands
+
+This is not an exhaustive set of commands. If you are not familiar with the unix command line, this will help you understand what the commands we are asking to use do throughout the day.
+
+Some of these commands have optional or required arguments. You can find out more about any command using the `man COMMAND`. 
+
+* man - Access the manual page about a command.
+* pwd - present working directory. It gives you information about the current location on the file system.
+* cd - change your current directory.
+* ls - lists the files and directories in the current working directory
+* mkdir - create a directory
+* touch - 
+* mv - can move a file into a directory, or rename a file/directory to a new name
+* rm - remove files and directories
+* cp - copies files and directories.
+* cat - concatenates and prints file to standard output
+
+There is a tutorial available at [Linuxcommand.org](http://linuxcommand.org/).
+
 ## Introduction to Version Control
 
 * [Background for Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
