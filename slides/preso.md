@@ -940,7 +940,6 @@ Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ THIS SHOULD BE RIGHT BEFORE LUNCH
 ^ J
 
 ---
@@ -1111,7 +1110,7 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 ---
 
-# Assignment 3
+# Lab 4
 
 Time: 10 minutes
 

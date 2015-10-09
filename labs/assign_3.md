@@ -296,7 +296,7 @@ suites:
 
 ```
 
-How do you know if your recipe worked? Kitchen converge finishes without errors, and you have a port up and running. You can check by browsing directly to the node because you have set up port forwarding!
+How do you know if your recipe worked? Kitchen converge finishes without errors, and you mysql up and running. You can check by browsing directly to the node because you have set up port forwarding!
 
 
 ```
