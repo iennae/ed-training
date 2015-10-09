@@ -78,10 +78,11 @@ core.filemode=true
 core.bare=false
 ```
 
-## Create a Project Directory (Everyone)
+## Create a project Directory (Everyone)
 
 ```
    mkdir wd
+   cd wd
 ```
 
 ## Create initial project (Everyone)
@@ -153,33 +154,42 @@ On branch master
 nothing to commit, working directory clean
 ```
 
-## Add a text file (Everyone)
-
-
-* mkdir TEAM
-* cd TEAM
-* touch NAME
-* git init
-* git add .
-* git commit -m "test git"
-* git status
-
 ## Create a GitHub identity (Everyone)
 
 * If you don't already have a github account, create one.
 * Browse to http://github.com. Supply a username, email address, and password.
 * Free plan is fine. Other plans allow you to have private repositories.
 
-## (Optional) Setting up your Github keys
+## (Optional) Setting up your Github keys (Everyone)
 
-If you want to skip using your username and password each time, you can follow the steps here to set up your ssh keys:
+If you want to skip the added burden of entering your username and password each time at the prompt with git, you can follow the steps here to set up your ssh keys:
 
 https://help.github.com/articles/generating-ssh-keys/
 
 
 ## Share your GitHub identity with your group. 
 
-## Provide GitHub identities to your instructors. (Notetaker)
+## Create a new remote repo
+
+![Once logged in, click New repository](images/assign_1/1-click_new_repo.png "Once logged in, click New repository")
+![In the Repository name field, ed-lab1](images/assign_1/2-name_ed-lab1.png "In the Repository name field, ed-lab1 ")
+![Make sure to click the Initilize README](images/assign_1/3-init_with_readme.png "Make sure to click the Initilize README")
+![After clicking Create Repo](images/assign_1/4-after_create_repo.png "After clicking Create Repo")
+![Click on SSH and grab the SSH clone url](images/assign_1/5-change_to_ssh_clone_url.png "Click on SSH and grab the SSH clone url")
+
+On the node:
+
+```
+   cd ~/wd
+   git@github.com:YOURUSERNAME/ed-lab1.git
+```
+
+Example:
+```
+[chef@ip-172-31-11-246 wd]$ git clone git@github.com:sparklydevops/ed-lab1.git
+```
+
+## Provide GitHub identities to your instructors. 
 
 * Jennifer Davis, iennae
 * Katherine Daniels, kdaniels
