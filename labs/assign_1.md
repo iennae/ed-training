@@ -16,8 +16,8 @@ If you don't have ssh available please downlowd an ssh client. For Windows, a go
 ## Customize your workstation (Everyone)
 
 ```
- $ git config --global user.name "YOUR NAME"
- $ git config --global user.email "YOUR EMAIL ADDRESS"
+   git config --global user.name "YOUR NAME"
+   git config --global user.email "YOUR EMAIL ADDRESS"
 
 ```
 
@@ -31,13 +31,13 @@ $ git config --global user.email "sparklydevops@gmail.com"
 ## Verify .gitconfig creation
 
 ```
-$ cat ~/.gitconfig
+   cat ~/.gitconfig
 ```
 
 Example:
 
 ```
-$ cat ~/.gitconfig
+   cat ~/.gitconfig
 [user]
    name = Jennifer Davis
    email = sparklydevops@gmail.com
@@ -50,13 +50,38 @@ $ cat ~/.gitconfig
 * vi/vim
 
 ```
-$ git config --global core.editor EDITORNAME
+   git config --global core.editor EDITORNAME
+```
+
+Example:
+```
+$ git config --global core.editor nano
 ```
 
 ## Create a Project Directory (Everyone)
 
-* mkdir wd
+```
+   mkdir wd
+```
 
+## Create initial project (Everyone)
+
+```
+   mkdir hello_world
+   cd hello_world
+   git init 
+   git status
+```
+
+Expected Output
+```
+[chef@ip-172-31-11-246 hello_world]$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+```
 
 * mkdir TEAM
 * cd TEAM
