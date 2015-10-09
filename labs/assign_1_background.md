@@ -60,5 +60,12 @@ Exit a file
 CTRL+x
 ```
 
+## Sharing updates to remote repository
+
+Basic git commands: push, pull, fetch
+
+* [Git Push](http://git-scm.com/docs/git-push)
+* [Git Pull](http://git-scm.com/docs/git-pull)
+* [Git Fetch](http://git-scm.com/docs/git-fetch)
 
 

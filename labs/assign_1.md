@@ -196,6 +196,8 @@ On the lower right you will see the clone url. You can leave it with https and e
 
 ![Click on SSH and grab the SSH clone url](images/assign_1/5-change_to_ssh_clone_url.png "Click on SSH and grab the SSH clone url")
 
+## Clone new repo to node
+
 On the node:
 
 ```
@@ -221,79 +223,33 @@ Check the contents of the repository you just cloned
   git remote -v
 ```
 
+## Add hello.txt to your ed-lab1 repo
 
-
-
-### Verify that your local repo is ready to be pushed to the remote repo.
-
-```
-$ git status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-nothing to commit (working directory clean)
-```
-
-* git push origin master
+Copy the hello.txt file from the previous exercise into your ed-lab1 repository.
 
 ```
-$ git push origin master
-Username for 'https://github.com': sparklydevops
-Password for 'https://sparklydevops@github.com':
-Counting objects: 5, done.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 317 bytes, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/JoeNGo/initial-git-test.git
-   9ebac23..b0fe04e  master -> master
-
+cp ~/wd/hello_world/hello.txt .
+git status
+git add hello.txt
+git status
+git commit -m "adding hello.txt to repository"
 ```
 
-If you run into conflict, pull updates, handle the conflicts, and resubmit edits.
+## Sharing updates to remote repository
 
-* git pull origin master
+At this point we have added the file to our local repository but not to our remote repository. 
 
-Why could you have run into a conflict?
+```
+git push origin master
+```
 
-### Problems
+Verify update to github, by reloading your repository
 
-* Are you getting an "Error: Permission to ORG/REPO denied to user" error?
- * Verify that you have been added to the organization to be able to write to repositories.
+![Verify updates to github](images/assign_1/6-verify_updates_to_github.png "If you successfully pushed your change to github you should see a hello.txt file in your repository")
 
-## Fork team repo (Everyone)
 
-Fork your team's repo into your account, and clone it back to your workstation.
-Replace "TEAM" with your TEAM's name. 
+## Outcomes 
 
-* From the GitHub GUI interface, click on your TEAM-repo 
-* From the GitHub GUI interface, click on "Fork" and fork into your personal account.
-* cd ~/wd
-* git clone https://github.com/USER/TEAM-repo.git
-* cd TEAM-repo
-* git remote -v
-* update README.md with your name and email address.
-* git add README.md
-* git commit -m "added name"
-* git push origin master
-* From the GitHub GUI interface, click on the pull request icon.
-* Add an appropriate message and "Create pull request"
-* Merge the pull request in to your project.
-
-## Discuss and decide on a branching strategy. (Team discussion)
-
-What is the process that you will handle collaboration and branching for your repo?
-
-### Update docs (Notetaker)
-
-* add notes taken during the team discussion to skills.md within the repo.
-* update docs/branch.md with the team decided strategy
-* update docs/nodes.md with the team's node IP addresses
-
-## Outcome 
-
-You should have an updated TEAM-repo with
-
-* updated README with everyone from your team's name and email address
-* forked remote TEAM-repo
-* updated docs/branch.md, skills.md
-
+* git configured on your node
+* ed-lab1 repo created on github, with local repo cloned
+  
