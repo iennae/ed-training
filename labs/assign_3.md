@@ -143,6 +143,7 @@ Update the `.kitchen.yml` configuration.
 
 * Change the driver name to _docker_.
 * Delete the ubuntu platform
+* Modify centos to centos-6.5. Avoid complexity of systemd and RHEL 7.
 * Add driver_config configuration to allow forwarding to the container.
 
 The contents of your .kitchen.yml should look as follows
@@ -156,7 +157,7 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: centos-7.1
+  - name: centos-6.5
     driver_config:
       forward:
       - 80:80
@@ -264,6 +265,7 @@ Update the `.kitchen.yml` configuration.
 
 * Change the driver name to _docker_.
 * Delete the ubuntu platform
+* Modify centos to centos-6.5. Avoid complexity of systemd and RHEL 7.
 * Add driver_config configuration to allow forwarding to the container.
 
 The contents of your .kitchen.yml should look as follows
@@ -277,7 +279,7 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: centos-7.1
+  - name: centos-6.5
     driver_config:
       forward:
       - 80:80
@@ -322,7 +324,6 @@ Update your development enviornment.
 You should have an updated _ed-lab3_ with
 
 * chef repo
-* 
 
  
 
@@ -340,4 +341,6 @@ The Apache2 cookbook will allow you to set up virtual hosts. You could use this 
 * open `~/wd/TEAM-repo/chef-repo/cookbooks/app/metadata.rb` in editor
 * add `depends 'apache2'`
 * save file
+
+### (Optional) 
 
