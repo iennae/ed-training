@@ -347,7 +347,8 @@ Comment out the current contents of install_apache.rb file and add the following
 
 ```
 include_recipe 'apache2'
-``
+```
+
 Edit the _metadata.rb_ file:
 
 ```
