@@ -1113,7 +1113,7 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 # Lab 4
 
-Time: 10 minutes
+Time: 30 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
@@ -1141,7 +1141,6 @@ Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ THIS WILL BE RIGHT BEFORE THE AFTERNOON BREAK
 
 ---
 
