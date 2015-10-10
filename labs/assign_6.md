@@ -1,6 +1,9 @@
 ## Overview
 
-In this exercise, every team will create a list of what to measure in their own example projects. If JoeNGo were running in a production environment, what would you need to monitor and measure to feel confident about its success and stability?
+In this exercise, every team will create a list of what to measure in their own example projects.
+
+In a production environment, what would you need to monitor and measure to feel confident about apache, and mysql?
+
 
 ## Introduction to Nagios
 
@@ -18,7 +21,7 @@ If you have time, compare the list of formatted context items you created with t
 
 ## Intro to Statsd
 
-What metrics would be beneficial to have in your JoeNGo environment?
+What metrics would be beneficial to have in your environment?
 
 * Which metrics would you want to show managers, that would make sense in a business context?
 * Which metrics would make sense in an engineering context, that would be beneficial to engineers trying to improve performance, or debug an issue while on-call?
