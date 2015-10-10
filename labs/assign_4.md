@@ -1,90 +1,70 @@
-# JoeNGo
+# Maintainable Chef
 
-## Overview
+## Linting (Everyone)
 
-In this exercise, every team will update their cookbooks, and add tests for recipes. Generally when pairing, one person will write the test, and then the other person will write the code that repairs the test.
+* cd ~/wd/TEAM-repo/chef-repo/cookbooks/app
+* foodcritic .
+* rubocop .
 
+```
+$ rubocop cookbooks/app
+warning: parser/current is loading parser/ruby21, which recognizes
+warning: 2.1.5-compliant syntax, but you are running 2.1.4.
+Inspecting 7 files
+CC.C..C
+```
 
-## Customize website via a Recipe (1 per team)
+### Add exclusions to Rubocop config file (Everyone)
 
-### Create feature branch or use your branching strategy
+* open .rubocop.yml in editor
+* add
 
-* git checkout -b custom_website
+```
+Style/SingleSpaceBeforeFirstArg:
+    Enabled: false
 
-### Write a failing test for content
+```
+* save file
+* rubocop .
 
-Make sure you base your failing test based on the content you expect to see. 
+## Integration Tests (Everyone)
 
-Two different methods for testing, what's different between them and which do you choose to use to test?
+* open `test/integration/default/serverspec/default_spec.rb`
+* update content
 
-Update `test/integration/default/serverspec/default_spec.rb`:
+```
+require 'spec_helper'
 
-```ruby
-describe file('/var/www/html/index.html') do
-  it { should contain('Hello World')}
+describe 'app::default' do
+  it "httpd service is running" do
+   expect(service 'httpd').to be_running
+ end
 end
 ```
 
-OR
-
-Update `test/integration/default/serverspec/default_spec.rb`:
-
-```ruby
-describe command('curl -s http://localhost') do
-  its(:stdout) { should_not contain('Centos') }
-  its(:stdout) { should contain('Hello World') }
-end
-```
-### Verify Test
-
-* kitchen converge
 * kitchen verify
 
-### Write the Code
-
-Update `app/recipes/default.rb` with
-
-```ruby
-file '/var/www/html/index.html' do
-  content "<h1>Hello, World</h1>"
-end
-```
-
-
-## Add tests for earlier features (1 per team)
-
-
-### Identify what tests you should add for mysql and apache
-
-Need help? [Serverspec docs](http://serverspec.org/) and [Examples from mysql cookbook](https://github.com/chef-cookbooks/mysql/tree/master/test/integration)
-
-* Update `test/integration/default/serverspec/default_spec.rb`:
-* Update `test/integration/default/serverspec/mysql_service_spec.rb`:
-
-### Verify Test
-
-* kitchen converge
-* kitchen verify
-* save your changes and commit back to team's repo
+Expected Output:
 
 ```
 
+[chef@ip-172-31-61-2 app]$ kitchen verify
+-----> Starting Kitchen (v1.3.1)
+-----> Verifying <default-centos-65>...
+       Removing /tmp/busser/suites/serverspec
+       Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+       Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+-----> Running serverspec test suite
+       /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.3/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
 
-### Extra Credit: Replace file with template resource
+       app::default
+         httpd service is running
 
-Read up on the template resource on the [Chef Docs site](http://docs.chef.io/resources.html#template) if you don't remember what a template is.
+       Finished in 0.26429 seconds (files took 0.7166 seconds to load)
+       1 example, 0 failures
 
-Update `app/recipes/default.rb` with
+       Finished verifying <default-centos-65> (0m5.41s).
+-----> Kitchen is finished. (0m6.28s)
 
-```ruby
-template '/var/www/html/index.html' do
-  .....
-end
 ```
-
-* save file
-* create template
-* open `app/metadata.rb` in editor, update version
-* save file
-* save your changes and commit back to team's repo
 

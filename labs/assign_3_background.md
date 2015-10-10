@@ -1,3 +1,15 @@
+
+### chef generate
+
+
+* [Creating your own Chef Cookbook Generator](https://www.chef.io/blog/2014/12/09/guest-post-creating-your-own-chef-cookbook-generator/)
+* [Policyfiles](https://www.chef.io/blog/2014/10/02/chefdk-0-3-0-released-introducing-policyfiles/) - Older blog post. 
+
+
+### Docker
+
+[Docker Cheat sheet](https://github.com/wsargent/docker-cheat-sheet)
+
 ### (Optional) Translate a runbook for installing MongoDB into chef
 
 #### Creation of MongoDB cookbook

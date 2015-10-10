@@ -937,7 +937,7 @@ Example:
 
 # Lab 3
 
-Time: 20 minutes
+Time: 30 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 

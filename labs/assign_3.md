@@ -22,7 +22,12 @@ In this exercise we are creating a monolithic chef-repo. The monolithic chef-rep
  git init .
  git add .
  git commit -m "Initial creation of chef repo"
- save your changes and commit back to team's repo
+ 
+ ```
+
+Save the changes and commit back to the ed-lab3 repo created.
+
+```
  git remote add origin git@github.com:USERNAME/ed-lab3.git
  git push -u origin master
 ```
@@ -62,9 +67,9 @@ Branch master set up to track remote branch master from origin.
 
 ## Clone the ed-lab3 repo to your node
 
-If you didn't generate the ed-lab3 chef-repo, clone your teams repo to your node. 
+If you didn't generate the `ed-lab3` chef-repo, clone your teams repo to your node. 
 
-
+Replace _USERNAME_ with the github identify of the person who created the repo.
 
 
 ```
@@ -102,8 +107,9 @@ The _driver_ and _observer_ should switch roles. The _driver_ will type out the 
 Generate the `install_apache` recipe in the `app` cookbook.
 
 ```
-   chef generate recipe . install_apache
-   nano recipes/install_apache.rb
+cd ~/wd/ed-lab3/cookbooks/app
+chef generate recipe . install_apache
+nano recipes/install_apache.rb
 ```
 
 Add the follow `resources` to the `install_apache` recipe.
@@ -144,40 +150,58 @@ Update the `.kitchen.yml` configuration.
 * Change the driver name to _docker_.
 * Delete the ubuntu platform
 * Modify centos to centos-6.5. Avoid complexity of systemd and RHEL 7.
-* Add driver_config configuration to allow forwarding to the container.
+* Uncomment out the forwarded port section.
 
-The contents of your .kitchen.yml should look as follows
+Update the contents of your .kitchen.yml to match:
+
 
 ```
----
 driver:
   name: docker
 
+## The forwarded_port port feature lets you connect to ports on the VM guest via
+## localhost on the host.
+## see also: https://docs.vagrantup.com/v2/networking/forwarded_ports.html
+
+network:
+    - ["forwarded_port", {guest: 80, host: 80}]
+
 provisioner:
-  name: chef_zero
+  name: policyfile_zero
+
+## require_chef_omnibus specifies a specific chef version to install. You can
+## also set this to `true` to always use the latest version.
+## see also: https://docs.chef.io/config_yml_kitchen.html
+
+#  require_chef_omnibus: 12.5.0
 
 platforms:
   - name: centos-6.5
-    driver_config:
-      forward:
-      - 80:80
 
 suites:
   - name: default
-    run_list:
-      - recipe[app::default]
     attributes:
 
 ```
 
+Solve dependency constraints, install 3rd party cookbooks. `chef install` will have a `Policyfile.lock.json` as output. `kitchen converge` will set up docker container, install chef (if needed), and converge based on the runlist as descirbed in `Policyfile.rb`.
 
 ```
-   kitchen converge 
+chef install
+kitchen converge 
 
 ```
 
 How do you know if your recipe worked? Kitchen converge finishes without errors, and you have a port up and running. You can check by browsing directly to the node because you have set up port forwarding!
 
+Validate your node has apache up and running:
+
+```
+curl localhost
+
+```
+
+Once you have verified that you have Apache up and running, commit your changes to your local and remote repositories.
 
 ```
 cd ~/wd/ed-lab3/cookbooks
@@ -186,10 +210,6 @@ git commit -m "install and configure apache"
 git push origin master
 ```
  
-
-
-
-
 ## Include mysql cookbook from supermarket - Pair 2
 
 This step depends on the app cookbook being created by Pair 1. Make sure that you have pulled from the remote repository.
@@ -241,13 +261,13 @@ mysql_service 'joengo' do
 end
 ```
 
-Edit the _metadata.rb_ file:
+Edit the _metadata.rb_ file to add a dependency on the mysql community cookbook. In your production environment, you would validate the contents of mysql prior to using it in a deployment scenario.:
 
 ```
 nano metadata.rb
 ```
 
-Update the contents of the `metadata.rb` file:
+Update the contents of the `metadata.rb` file.:
 
 ```
 depends 'mysql', '~> 6.0'
@@ -257,7 +277,6 @@ depends 'mysql', '~> 6.0'
 Update the `.kitchen.yml`. 
 
 ```
-
  nano .kitchen.yml
 ```
 
@@ -266,35 +285,45 @@ Update the `.kitchen.yml` configuration.
 * Change the driver name to _docker_.
 * Delete the ubuntu platform
 * Modify centos to centos-6.5. Avoid complexity of systemd and RHEL 7.
-* Add driver_config configuration to allow forwarding to the container.
+* Uncomment out the forwarded port section.
 
-The contents of your .kitchen.yml should look as follows
+Update the contents of your .kitchen.yml to match:
+
 
 ```
----
 driver:
   name: docker
 
+## The forwarded_port port feature lets you connect to ports on the VM guest via
+## localhost on the host.
+## see also: https://docs.vagrantup.com/v2/networking/forwarded_ports.html
+
+network:
+    - ["forwarded_port", {guest: 80, host: 80}]
+
 provisioner:
-  name: chef_zero
+  name: policyfile_zero
+
+## require_chef_omnibus specifies a specific chef version to install. You can
+## also set this to `true` to always use the latest version.
+## see also: https://docs.chef.io/config_yml_kitchen.html
+
+#  require_chef_omnibus: 12.5.0
 
 platforms:
   - name: centos-6.5
-    driver_config:
-      forward:
-      - 80:80
 
 suites:
   - name: default
-    run_list:
-      - recipe[app::default]
     attributes:
 
 ```
 
+Solve dependency constraints, install 3rd party cookbooks. `chef install` will have a `Policyfile.lock.json` as output. `kitchen converge` will set up docker container, install chef (if needed), and converge based on the runlist as descirbed in `Policyfile.rb`.
 
 ```
-   kitchen converge 
+chef install
+kitchen converge 
 
 ```
 
