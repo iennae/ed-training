@@ -352,13 +352,13 @@ Update your development enviornment.
 
 You should have an updated _ed-lab3_ with
 
-* chef repo
+* chef repo with mysql and apache recipes.
 
  
 
 ### (Optional) Include apache2 cookbook from supermarket
 
-This exercise expects that the install_webserver.rb recipe above was completed.
+This exercise expects that the `install_webserver.rb` recipe above was completed.
 
 [Supermarket](https://supermarket.chef.io) is the Chef community site. Before using community cookbooks in your environment, always inspect the cookbook. You run the code with root privileges!
 
