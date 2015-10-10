@@ -329,18 +329,37 @@ You should have an updated _ed-lab3_ with
 
 ### (Optional) Include apache2 cookbook from supermarket
 
+This exercise expects that the install_webserver.rb recipe above was completed.
+
 [Supermarket](https://supermarket.chef.io) is the Chef community site. Before using community cookbooks in your environment, always inspect the cookbook. You run the code with root privileges!
 
 The Apache2 cookbook will allow you to set up virtual hosts. You could use this cookbook instead of the simple recipe we have made to install apache.
 
 [Apache2 Cookbook](https://supermarket.chef.io/cookbooks/apache2)
 
-* open `~/wd/TEAM-repo/chef-repo/cookbooks/app/recipes/default.rb` in editor
-* add `include_recipe 'apache2'`
-* save file
-* open `~/wd/TEAM-repo/chef-repo/cookbooks/app/metadata.rb` in editor
-* add `depends 'apache2'`
-* save file
+```
+cd ~/wd/ed-lab3/cookbooks
+git pull origin master
+nano recipes/install_apache.rb
+```
+
+Comment out the current contents of install_apache.rb file and add the following:
+
+```
+include_recipe 'apache2'
+``
+Edit the _metadata.rb_ file:
+
+```
+nano metadata.rb
+```
+
+Update the contents of the `metadata.rb` file:
+
+```
+depends 'apache2'
+```
+
 
 ### (Optional) Translate a runbook for installing MongoDB into chef
 
