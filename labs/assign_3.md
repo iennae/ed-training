@@ -298,7 +298,7 @@ suites:
 
 ```
 
-How do you know if your recipe worked? Kitchen converge finishes without errors, and you mysql up and running. You can check by browsing directly to the node because you have set up port forwarding!
+How do you know if your recipe worked? Kitchen converge finishes without errors, and mysql is up and running. You can check by browsing directly to the node because you have set up port forwarding!
 
 
 ```
@@ -342,5 +342,12 @@ The Apache2 cookbook will allow you to set up virtual hosts. You could use this 
 * add `depends 'apache2'`
 * save file
 
-### (Optional) 
+### (Optional) Translate a runbook for installing MongoDB into chef
 
+MongoDB is an open-source, document-oriented database designed for ease of development and scaling.  The MongoDB documentation site includes a [installation guide on how to install MongoDB on Red Hat Enterprise Linux, CentOS Linux, Fedora Linux, or a related system](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/). 
+
+* [Chef Resource Documentation](https://docs.chef.io/resources.html)
+
+Read the [installation guide](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/), identify the resources you need, and create a mongodb cookbook populated with an appropriate recipe. 
+
+Hints in the [Lab 3 background](assign_3_background.md)
