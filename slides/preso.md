@@ -12,7 +12,8 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 # Jennifer Davis
 
 * Software Engineer, Chef Software
-* Founder CoffeeOps
+* Co-author of "Effective Devops"
+* Founder of CoffeeOps
 * DevOpsDays Silicon Valley Organizer
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/george.png)
@@ -85,7 +86,7 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 # Network Connectivity
 
 Network Name: Velocity
-No access code needed
+Access Code: (none)
 
 Local Downloads: http://10.10.32.101
 
