@@ -16,6 +16,9 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 * Founder of CoffeeOps
 * DevOpsDays Silicon Valley Organizer
 
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/george.png)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/coffee_ops.jpg)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/effectivedevops.jpg)
 
 ---
 
@@ -670,11 +673,9 @@ Time: 15 minutes
 
 * git review 
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat_asleep.jpg)
 
-
-^ K after lunch cat foods pic TODO change pic 
-
+^ K 
 
 ---
 
@@ -1160,11 +1161,6 @@ Time: 30 minutes
 Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
-
-
----
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat8.jpg)
 
 ---
 
