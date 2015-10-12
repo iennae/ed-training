@@ -477,12 +477,6 @@ Time: 15 minutes
 
 ---
 
-# GridIronOps
-## Katie Rose
-
-
----
-
 
 # Kanban
 
