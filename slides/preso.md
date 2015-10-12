@@ -478,7 +478,6 @@ Time: 15 minutes
 
 ---
 
-
 # Kanban
 
 * Start with what you do now
@@ -624,6 +623,8 @@ Time: 15 minutes
 
 User: chef
 Password: chef
+
+sudo yum install nano
 
 ^ K Add bitly links to slide 
 
@@ -1117,10 +1118,6 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 ---
 
-
-
----
-
 # [fit] Introduction to Lab 4 
 
 [Lab 4](https://github.com/iennae/ed-training/blob/master/labs/assign_4.md)
@@ -1133,7 +1130,7 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 # Lab 4
 
-Time: 30 minutes
+Time: 10 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
