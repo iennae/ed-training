@@ -155,6 +155,7 @@ Update the `.kitchen.yml` configuration.
 Update the contents of your .kitchen.yml to match:
 
 
+
 ```
 driver:
   name: docker
@@ -177,12 +178,26 @@ provisioner:
 
 platforms:
   - name: centos-6.5
-
+    driver_config:
+      forward:
+      - 80:80
+      
 suites:
   - name: default
     attributes:
 
 ```
+
+```
+platforms:
+  - name: centos-6.5
+    driver_config:
+      forward:
+      - 80:80
+```
+or 
+
+`kitchen login ` and verify on the docker image directly. 
 
 Solve dependency constraints, install 3rd party cookbooks. `chef install` will have a `Policyfile.lock.json` as output. `kitchen converge` will set up docker container, install chef (if needed), and converge based on the runlist as descirbed in `Policyfile.rb`.
 
@@ -312,7 +327,9 @@ provisioner:
 
 platforms:
   - name: centos-6.5
-
+    driver_config:
+      forward:
+      - 80:80
 suites:
   - name: default
     attributes:
