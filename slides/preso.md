@@ -474,6 +474,13 @@ Time: 15 minutes
 
 ---
 
+# GridIronOps
+## Katie Rose
+
+
+---
+
+
 # Kanban
 
 * Start with what you do now
@@ -617,6 +624,9 @@ Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat1.jpg)
 
+User: chef
+Password: chef
+
 ^ K Add bitly links to slide 
 
 ---
@@ -635,7 +645,7 @@ Time: 15 minutes
 
 # [fit] Introduction to Lab 2 
 
-[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_2.md)
+[Lab 2](https://github.com/iennae/ed-training/blob/master/labs/assign_2.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
 
@@ -931,7 +941,7 @@ Example:
 
 # [fit] Introduction to Lab 3 
 
-[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_3.md)
+[Lab 3](https://github.com/iennae/ed-training/blob/master/labs/assign_3.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat3.jpg)
 
@@ -1137,15 +1147,10 @@ Time: 30 minutes
 
 [Lab 4](https://github.com/iennae/ed-training/blob/master/labs/assign_4.md)
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat6.jpg)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
 
 ^ J
 
-
-
----
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
 
 ---
 
