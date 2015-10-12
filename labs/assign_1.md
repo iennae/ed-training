@@ -202,7 +202,7 @@ On the node:
 
 ```
    cd ~/wd
-   git@github.com:YOURUSERNAME/ed-lab1.git
+   git clone git@github.com:YOURUSERNAME/ed-lab1.git
 ```
 
 Example:
