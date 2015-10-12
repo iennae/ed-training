@@ -15,6 +15,9 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 * Founder CoffeeOps
 * DevOpsDays Silicon Valley Organizer
 
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/george.png)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/coffee_ops.jpg)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/effectivedevops.jpg)
 
 ---
 
@@ -81,8 +84,8 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 
 # Network Connectivity
 
-Network Name:
-Access Code:
+Network Name: Velocity
+No access code needed
 
 Local Downloads: http://10.10.32.101
 
@@ -669,11 +672,9 @@ Time: 15 minutes
 
 * git review 
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat_asleep.jpg)
 
-
-^ K after lunch cat foods pic TODO change pic 
-
+^ K 
 
 ---
 
@@ -1159,11 +1160,6 @@ Time: 30 minutes
 Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
-
-
----
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat8.jpg)
 
 ---
 
