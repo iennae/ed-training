@@ -73,7 +73,7 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 * Testing infrastucture automation and other changes
 * 3:00-3:30pm Afternoon Break - Sutton Complex
 * Measuring, monitoring, and wrap-up
-* Ignites: Beekman Parlor
+* Ignites: Beekman Parlor (with Katherine)
 
 ^ J
 
@@ -103,16 +103,11 @@ Local Downloads: http://10.10.32.101
 * Meet your team!
 * What are motivations? What are current beliefs? What are current skills? Gaps in skills?
 
-Time: 10 minutes
+Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ K: Because of time, 2 minutes per speaker, gatekeeper should also time speaker
-
----
-
-
-^ J
+^ K: 
 
 ---
 
@@ -380,6 +375,8 @@ Time: 5 minutes
  * Minimize 'pushing'
 * Team sync
 
+^ J
+
 ---
 
 # Workflow
@@ -391,6 +388,8 @@ Work that is
 * organized
 * moves from one state to another
 
+^ J
+
 ---
 
 # WIP
@@ -398,6 +397,7 @@ Work that is
 * Work in Progress
  * work that has had money or people applied to it.
 
+^ J
 
 ---
 
@@ -411,6 +411,8 @@ Work that is
 * priority
 * owner
 
+^ J
+
 ---
 
 # Task Handling
@@ -419,6 +421,8 @@ Work that is
 * Can you do anything with it?
 * What is the next step?
 
+^ J
+
 ---
 
 # Projects
@@ -426,6 +430,8 @@ Work that is
 * Same requirements as a task
 * Larger in scope
 * May be comprised of more than one task
+
+^ J
 
 ---
 
@@ -438,6 +444,8 @@ Work that is
  * single point of knowledge (you) work
  * high priority task push from manager
 
+^ J
+
 ---
 
 # Blocked work
@@ -448,6 +456,8 @@ Work that is
  * dependent on SPOK - blocked by team
  * time dependent
 
+^ J
+
 ---
 
 # Team Exercise
@@ -457,6 +467,8 @@ Discuss with your team:
 * What is the difference between a task and a project?
 * Do you have interrupts? What are they?
 * How do you determine when work is done?
+
+Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
@@ -527,7 +539,7 @@ Discuss with your team:
 * Collaboration
 * Retrospectives
 
-^ K (tie back to fluxx)
+^ K 
 
 ---
 
@@ -568,7 +580,7 @@ Discuss with your team:
 
 ---
 
-# [fit] Configuration Management
+# Configuration Management
 
 * Process of identifying, managing, monitoring, and auditing a product through its entire life including the processes, documentation, people, tools, software, and systems.
 
@@ -599,21 +611,13 @@ Discuss with your team:
 
 ---
 
-# [fit] Introduction to Git and Workflows
+# [fit] Introduction to Lab 1 
 
-^ K
-
----
-
-# Isolated Development Environments
-
-* Not automatically updated
-* Manually pull upstream commits
-
-^ K
-
+[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_1.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat1.jpg)
+
+^ K Add bitly links to slide 
 
 ---
 
@@ -629,7 +633,13 @@ Time: 15 minutes
 
 ---
 
+# [fit] Introduction to Lab 2 
+
+[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_2.md)
+
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
+
+^ J
 
 ---
 
@@ -641,24 +651,19 @@ Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ K
+^ J BEFORE LUNCH
 
 ---
+
+# Welcome Back 
+
+* git review 
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
 
----
 
-# Pull Requests
+^ K after lunch cat foods pic TODO change pic 
 
-* Request to pull content into repository
- * discussion
- * follow up commits
- * selfie gifs[^3]
-
-[^3]: https://github.com/thieman/github-selfies
-
-^ K
 
 ---
 
@@ -666,15 +671,8 @@ Time: 15 minutes
 
 git pull REMOTE
 
-^ K
+^ K 
 
----
-
-# git pull --rebase
-
-* ensure linear history by preventing unnecessary merge commits
-
-^ K
 
 ---
 # git push remote branch
@@ -931,7 +929,13 @@ Example:
 
 ---
 
+# [fit] Introduction to Lab 3 
+
+[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_3.md)
+
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat3.jpg)
+
+^ J
 
 ---
 
@@ -1107,7 +1111,17 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 ---
 
+
+
+---
+
+# [fit] Introduction to Lab 4 
+
+[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/assign_4.md)
+
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat5.jpg)
+
+^ J
 
 ---
 
@@ -1119,15 +1133,15 @@ Time: 30 minutes
 
 ---
 
+# [fit] Introduction to Lab 5 
+
+[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/assign_4.md)
+
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat6.jpg)
 
----
+^ J
 
-# Retrospective on Assignment 3
 
-Time: 15 minutes
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
 ---
 
@@ -1135,7 +1149,7 @@ Time: 15 minutes
 
 ---
 
-# Assignment 4
+# Lab 5
 
 Time: 20 minutes
 
@@ -1145,10 +1159,6 @@ Time: 20 minutes
 ---
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat8.jpg)
-
----
-
-# Automated Test and Build
 
 ---
 
@@ -1328,22 +1338,6 @@ define servicedependency{
 
 ---
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat9.jpg)
-
----
-
-# Assignment 5
-
-Time: 20 minutes
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
-
----
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat10.jpg)
-
----
-
 # [fit] Retrospective :clock430:
 
 ---
@@ -1373,11 +1367,6 @@ Time: 20 minutes
 * Manual, Automation to Continuous "X"
 * Be the storylistener and storyteller in your org
 * Effective Devops available in Early Release
-
----
-
-# Slides
-
 
 ---
 
