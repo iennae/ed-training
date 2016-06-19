@@ -94,7 +94,7 @@ Access Code:
 
 ---
 
-### Team Introductions
+# Team Activity 1
 
 * Meet your team!
  * What are motivations? 
@@ -260,6 +260,7 @@ Anita Woolley and Thomas Malone
 
 ---
 
+# Team Activity 2
 ### Careless Conversations (inspired by Alan Cyment)
 
 * Pair up
@@ -460,7 +461,7 @@ Work that is
 
 ---
 
-# Team Activity
+# Team Activity 3
 
 Discuss with your team:
 
@@ -549,7 +550,7 @@ Time: 15 minutes
 
 ---
 
-# Team Activity
+# Team Activity 4
 
 Talk through workflow for tasks for your team. How will you figure out what work needs to be done, who will work on the work, and when it is done. Use postits to mock up a legend for types of work items. Use pad to mock up your work items board. Use blue tape to mark off lanes. 
 
@@ -652,7 +653,7 @@ Time: 15 minutes
 
 ---
 
-# Team Activity
+# Team Activity 5
 
 In pairs, discuss your current work environment. 
 
