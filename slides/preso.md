@@ -615,7 +615,7 @@ Time: 30 minutes
 
 # [fit] Introduction to Lab 1 
 
-[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_1.md)
+[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/lab_1.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat1.jpg)
 
@@ -629,7 +629,7 @@ sudo yum install nano
 
 # Lab 1
 
-[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/assign_1.md)
+[Lab 1](https://github.com/iennae/ed-training/blob/master/labs/lab_1.md)
 
 Time: 15 minutes
 
@@ -655,7 +655,7 @@ Time: 30 minutes
 
 # [fit] Introduction to Lab 2 
 
-[Lab 2](https://github.com/iennae/ed-training/blob/master/labs/assign_2.md)
+[Lab 2](https://github.com/iennae/ed-training/blob/master/labs/lab_2.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
 
@@ -664,7 +664,7 @@ Time: 30 minutes
 
 # Lab 2
 
-[Lab 2](https://github.com/iennae/ed-training/blob/master/labs/assign_2.md)
+[Lab 2](https://github.com/iennae/ed-training/blob/master/labs/lab_2.md)
 
 Time: 15 minutes
 
@@ -916,19 +916,13 @@ Example:
 * kitchen destroy
 * kitchen test
 
----
 
-# Docker
-
-* Images
-* Registries
-* Containers
 
 ---
 
 # [fit] Introduction to Lab 3 
 
-[Lab 3](https://github.com/iennae/ed-training/blob/master/labs/assign_3.md)
+[Lab 3](https://github.com/iennae/ed-training/blob/master/labs/lab_3.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat3.jpg)
 
@@ -938,15 +932,49 @@ Example:
 
 # Lab 3
 
-Time: 30 minutes
+Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
 
+---
+
+# [fit] Introduction to Lab 4 
+
+Translate a runbook for installing MongoDB into chef.
+
+[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/lab_4.md)
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat4.jpg)
+
 
 ---
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat4.jpg)
+# Lab 4
+
+Time: 30 minutes
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
+
+---
+
+# [fit] Introduction to Lab 5
+
+Translate our MongoDB cookbook from recipes into resources.
+
+[Lab 5](https://github.com/iennae/ed-training/blob/master/labs/lab_5.md)
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat5.jpg)
+
+
+---
+
+# Lab 5
+
+Time: 30 minutes
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
+
 
 ---
 
@@ -1110,7 +1138,7 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 # [fit] Introduction to Lab 4 
 
-[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/assign_4.md)
+[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/lab_4.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat5.jpg)
 
@@ -1128,7 +1156,7 @@ Time: 10 minutes
 
 # [fit] Introduction to Lab 5 
 
-[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/assign_4.md)
+[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/lab_4.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
 
@@ -1155,7 +1183,13 @@ Time: 20 minutes
 
 [^2]:Lam, Yvonne. 'Sysadvent: Day 5 - How To Talk About Monitors, Tests, And Diagnostics'. Sysadvent.blogspot.com. N.p., 2014. Web. 26 May 2015.
 
+---
 
+# Docker
+
+* Images
+* Registries
+* Containers
 
 ---
 
