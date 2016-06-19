@@ -292,19 +292,6 @@ Time: 5 minutes
 
 ---
 
-## Smarter Teams Build Better Value[^1]
-
-* Lots of Communication
-* Contribute equally to team's discussions
-* Theory of Mind
-* Increased diversity
-
-[^1]: Engel, David et al. 'Reading The Mind In The Eyes Or Reading Between The Lines? Theory Of Mind Predicts Collective Intelligence Equally Well Online And Face-To-Face'. PLoS ONE 9.12 (2014): e115212. Web. 26 May 2015.
-
-
-
----
-
 > A life becomes meaningful when one sees himself or herself as an actor within the context of a story.
 
 -- George Howard
@@ -688,19 +675,17 @@ Time: 15 minutes
 
 ---
 
-# Welcome Back 
-
-* git review 
+# Extending Git Understanding
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat_asleep.jpg)
 
+* Highly recommend: Git for Teams http://gitforteams.com/ Emma Jane Westby 
 
 ---
 
 # Infrastructure
 
 * Aggregate of applications, configurations, access control, data, compute nodes, network, storage, processes, and people.
-
 
 
 ---
