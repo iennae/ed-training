@@ -1,5 +1,9 @@
 # Setup a Chef Repository
 
+Before starting any work in this lab, make sure that you read through the entire requirements as a team. Define which items are tasks, which are dependent tasks, and what tasks could potentially cause conflicts in your repository. 
+
+You can track this on your kanban board. 
+
 ## Have one person in your team create a repo called ed-lab3.
 
 * Elect one person from your group to create a repo called `ed-lab3`. Follow the process from Lab 1 with one exception, don't create a readme.
@@ -11,6 +15,8 @@ Follow the process from Lab 2 to grant access to your full team.
 ## Generate the chef repo.
 
 In this exercise we are creating a monolithic chef-repo. The monolithic chef-repo will hold the global policy items as well as any cookbooks created in this workshop. Generally, when using with a Chef server you choose between one of two strategies. 
+
+You can learn more about these supported workflows at this Chef RFC: https://github.com/chef/chef-rfc/blob/master/rfc019-chef-workflows.md
 
 1. Monolithic Workflow - 1 chef-repo containing everything that maps to 1 repo in source control.
 2. 1 cookbook per repo + policy only chef-repo. 
@@ -37,13 +43,15 @@ Example Output
 ```
 [chef@ip-172-31-11-246 ed-lab3]$ git add .
 [chef@ip-172-31-11-246 ed-lab3]$ git commit -m "initial creation of chef repo"
-[master (root-commit) 763d4d8] initial creation of chef repo
- 14 files changed, 316 insertions(+)
+[master (root-commit) a590574] Initial creation of chef repo
+ 16 files changed, 351 insertions(+)
+ create mode 100644 .chef-repo.txt
  create mode 100644 .gitignore
  create mode 100644 LICENSE
  create mode 100644 README.md
  create mode 100644 chefignore
  create mode 100644 cookbooks/README.md
+ create mode 100644 cookbooks/example/README.md
  create mode 100644 cookbooks/example/attributes/default.rb
  create mode 100644 cookbooks/example/metadata.rb
  create mode 100644 cookbooks/example/recipes/default.rb
@@ -67,7 +75,7 @@ Branch master set up to track remote branch master from origin.
 
 ## Clone the ed-lab3 repo to your node
 
-If you didn't generate the `ed-lab3` chef-repo, clone your teams repo to your node. 
+If you didn't have the task to generate the `ed-lab3` chef-repo, clone your teams repo to your node. 
 
 Replace _USERNAME_ with the github identify of the person who created the repo.
 
@@ -94,7 +102,7 @@ The _driver_ will type out the commands. The _observer_ will verify for mistakes
  cd ~/wd/ed-lab3/cookbooks
  chef generate cookbook app
  git add app
- git commit -m "creation of cookbook app"
+ git commit -m "creation of app cookbook"
  git push origin master
  cd ~/wd/ed-lab3/cookbooks/app
 ```
@@ -149,8 +157,8 @@ Update the `.kitchen.yml` configuration.
 
 * Change the driver name to _docker_.
 * Delete the ubuntu platform
-* Modify centos to centos-6.5. Avoid complexity of systemd and RHEL 7.
-* Uncomment out the forwarded port section.
+* Modify centos to centos-6.5. Avoid complexity of systemd and RHEL 
+* Add the forwarded ports section. 
 
 Update the contents of your .kitchen.yml to match:
 
@@ -168,7 +176,7 @@ network:
     - ["forwarded_port", {guest: 80, host: 80}]
 
 provisioner:
-  name: policyfile_zero
+  name: chef_zero
 
 ## require_chef_omnibus specifies a specific chef version to install. You can
 ## also set this to `true` to always use the latest version.
@@ -195,11 +203,10 @@ platforms:
       forward:
       - 80:80
 ```
-or 
+ 
 
 `kitchen login ` and verify on the docker image directly. 
 
-Solve dependency constraints, install 3rd party cookbooks. `chef install` will have a `Policyfile.lock.json` as output. `kitchen converge` will set up docker container, install chef (if needed), and converge based on the runlist as descirbed in `Policyfile.rb`.
 
 ```
 chef install
@@ -371,49 +378,6 @@ You should have an updated _ed-lab3_ with
 
 * chef repo with mysql and apache recipes.
 
- 
 
-### (Optional) Include apache2 cookbook from supermarket
-
-This exercise expects that the `install_webserver.rb` recipe above was completed.
-
-[Supermarket](https://supermarket.chef.io) is the Chef community site. Before using community cookbooks in your environment, always inspect the cookbook. You run the code with root privileges!
-
-The Apache2 cookbook will allow you to set up virtual hosts. You could use this cookbook instead of the simple recipe we have made to install apache.
-
-[Apache2 Cookbook](https://supermarket.chef.io/cookbooks/apache2)
-
-```
-cd ~/wd/ed-lab3/cookbooks
-git pull origin master
-nano recipes/install_apache.rb
-```
-
-Comment out the current contents of install_apache.rb file and add the following:
-
-```
-include_recipe 'apache2'
-```
-
-Edit the _metadata.rb_ file:
-
-```
-nano metadata.rb
-```
-
-Update the contents of the `metadata.rb` file:
-
-```
-depends 'apache2'
-```
-
-
-### (Optional) Translate a runbook for installing MongoDB into chef
-
-MongoDB is an open-source, document-oriented database designed for ease of development and scaling.  The MongoDB documentation site includes a [installation guide on how to install MongoDB on Red Hat Enterprise Linux, CentOS Linux, Fedora Linux, or a related system](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/). 
-
-* [Chef Resource Documentation](https://docs.chef.io/resources.html)
-
-Read the [installation guide](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/), identify the resources you need, and create a mongodb cookbook populated with an appropriate recipe. 
 
 Hints in the [Lab 3 background](assign_3_background.md)

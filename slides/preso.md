@@ -344,7 +344,6 @@ Time: 5 minutes
 
 ^ When novices pair, can work together to learn and achieve more than a novice working on their own. If no understanding in pair, and fire-fighting schedules can lead to poor practices implemented into production higher technical debt.
 
----
 
 
 ---
