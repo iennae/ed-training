@@ -1,11 +1,11 @@
 slidenumbers: true
-footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
+footer: __**:sparkles:@sigje #effectivedevops:sparkles:**__
 <!-- theme: "Letters from Sweden" white -->
 
 =======
-# [fit] Effective Devops:
-## [fit] Collaboration and Tools
-#### Jennifer Davis & Katherine Daniels
+
+# [fit] DevOps: Crafting Reusable Infrastructure Resources
+#### Jennifer Davis 
 
 ---
 
@@ -22,31 +22,14 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
 
 ---
 
-# Katherine Daniels
-
-* Senior Operations Engineer, Etsy
-* Co-author of "Effective Devops"
-* DevopsDays NYC Organizer
-* Ship Show Podcast Co-host
-
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat.jpg)
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/beer.jpg)
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/effectivedevops.jpg)
-
----
-
 # Communication
 
 * Jennifer Davis
    Twitter: @sigje
    Email: sparklydevops@gmail.com
-* Katherine Daniels
-   Twitter: @beerops
-   Email: sparklyyakshaver@gmail.com
 
 ### Twitter: #effectivedevops
 
-^ J, K
 
 ---
 
@@ -57,38 +40,48 @@ footer: __**:sparkles:@beerops @sigje #effectivedevops:sparkles:**__
   * What would you like to see more/less of?
   * Was there anything you found unclear?
 
-^ K
 
 ---
 
 # Schedule
 
 * Introduction to teams, devops principles
-* 10:30-11:00am Morning Break - Sutton Complex
+* 10:30-11:00am Morning Break - 
 * Visualization of work, Git, Infrastructure automation
-* 12:30-1:30pm Lunch - Americas Halls 1 & 2
-
-^ J
+* 12:30-1:30pm Lunch - 
 
 ---
 
 # Schedule
 
 * Testing infrastucture automation and other changes
-* 3:00-3:30pm Afternoon Break - Sutton Complex
+* 3:00-3:30pm Afternoon Break - 
 * Measuring, monitoring, and wrap-up
-* Ignites: Beekman Parlor (with Katherine)
 
-^ J
+---
+
+# Schedule
+
+* Introduction to teams, devops principles
+* 10:30-11:00am Morning Break - 
+* Visualization of work, Git, Infrastructure automation
+* 12:30-1:30pm Lunch - 
+
+---
+
+# Schedule
+
+* Testing infrastucture automation and other changes
+* 3:00-3:30pm Afternoon Break - 
+* Measuring, monitoring, and wrap-up
 
 ---
 
 # Network Connectivity
 
-Network Name: Velocity
-Access Code: (none)
+Network Name: 
+Access Code: 
 
-Local Downloads: http://10.10.32.101
 
 ---
 
@@ -98,20 +91,20 @@ Local Downloads: http://10.10.32.101
 * [Code of Conduct](http://www.oreilly.com/conferences/code-of-conduct.html)
 * Learn effective workflows for using and testing source control and configuration management
 
-^ K
 
 ---
 
 ### Team Introductions
 
 * Meet your team!
-* What are motivations? What are current beliefs? What are current skills? Gaps in skills?
+ * What are motivations? 
+ * What are current beliefs? 
+ * Skills? Gaps in skills?
+  * git, chef, docker, continuous integration, continuous delivery
 
 Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
-
-^ K: 
 
 ---
 
@@ -129,22 +122,19 @@ Cultural movement that seeks to:
 * plan for scale, and
 * measure the effect of social and technical change.
 
-
-^ J,K
-
 ---
 
 # Folk Models
 
 * general popularly understood meaning particular to a socio-cultural grouping but which has not been formally defined or standardized.
 
-^ K
+
 
 ---
 
 # Why Devops?
 
-^ J,K
+
 
 ---
 
@@ -155,7 +145,7 @@ Cultural movement that seeks to:
 
 2014 PuppetLabs State of DevOps Survey
 
-^ J
+
 
 ---
 
@@ -166,71 +156,87 @@ Cultural movement that seeks to:
 
 2014 PuppetLabs State of DevOps Survey
 
-^ J
-
 ---
 
-## Five Pillars of Effective Devops
+# Foundation of DevOps
 
-* Collaboration
-* Hiring
-* Affinity
-* Tools
-* Scaling
-
-^ K
 
 ---
 
 # Collaboration
 
-* Individuals Working Together
-
-^ K
+> Individuals working together with shared interactions and input building towards a common goal.
 
 ---
 
-# Hiring
+# Collaboration
 
-* Choosing Individuals
+* Multiple types of collaboration
+* Monitoring for single points of failure
+* Monitoring burnout
 
-^ K
+
+![](/Users/jenniferdavis/images/14283534363_a2db2d3345_k.jpg)
+
+[^3]: CC Image courtesy of Spoons by Jacqui Brown on Flickr
+
+---
+
+# Smarter Teams
+## build better value
+
+
+
+![](/Users/jenniferdavis/images/25392512853_3462461c21_k.jpg)
+
+[^2]: CC Image courtesy of WOCinTech Chat by wocintech on Flickr
+
+^ * Lots of Communication
+* Contribute equally to team's discussions
+* Theory of Mind
+* Increased diversity
+Why Some Teams are Smarter than Others
+Anita Woolley and Thomas Malone
 
 ---
 
 # Affinity
 
-* From Individuals to Teams
+> Building inter-team relationships, empathy and trust in support of shared organizational and business goals.
 
-^ K
+---
+
+# Affinity
+
+* Monitor organizational signal
+* Monitor gating of processes
+ * Shadow HR, IT, Marketing
 
 ---
 
 # Tools
 
-* Accelerators of Culture
-
-^ K
+> Accelerators of culture that if used effectively can enhance and support a culture of collaboration and affinity.
 
 ---
 
-# Scaling
+# Scaling 
 
-* Evolution, growth and advancement of the organization
-
-^ K Scaling is about the evolution, growth, and advancement of the organization as a whole; it is not limited to only discussions of increasing in size, but also about organizational change and development overall.
+> Applying the considerations of collaboration, and tooling throughout various inflection points of an organizations lifecycle.
 
 ---
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/effectivedevops.jpg)
+# Foundations of DevOps
 
-# Collaboration and Tools
+* Collaboration
+* Affinity
+* Tools
+* Scaling
 
-^ J: Not enough time to cover all pillars. Not enough time to go into great depth which is why we are writing a book! We're going to focus on elements of collaboration and tools today.
 
 ---
 
-## Recognizing your Devops Narrative
+## Framing Devops Narrative
 
 ---
 
@@ -243,8 +249,6 @@ Cultural movement that seeks to:
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/george.png)
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/general.png)
 
-^ J,K: Book example (bad first, then good)
-
 ---
 
 # Team
@@ -253,7 +257,6 @@ Cultural movement that seeks to:
 * Defined beliefs
 * Empowered
 
-^ J
 
 ---
 
@@ -284,7 +287,7 @@ Time: 5 minutes
 * Listen
 * Circle back
 
-^ K: this is how you transform a group into a team
+^ this is how you transform a group into a team
 
 ---
 
@@ -297,7 +300,7 @@ Time: 5 minutes
 
 [^1]: Engel, David et al. 'Reading The Mind In The Eyes Or Reading Between The Lines? Theory Of Mind Predicts Collective Intelligence Equally Well Online And Face-To-Face'. PLoS ONE 9.12 (2014): e115212. Web. 26 May 2015.
 
-^ J
+
 
 ---
 
@@ -305,7 +308,7 @@ Time: 5 minutes
 
 -- George Howard
 
-^ K: Work is meaningful when people see themselves as active participants. Sharing story is critical part of building resilience.
+^ Work is meaningful when people see themselves as active participants. Sharing story is critical part of building resilience.
 
 ---
 
@@ -314,8 +317,6 @@ Time: 5 minutes
 * Large teams - roles may be highly segregated
 * Small teams - one person may be responsible for many roles
 
-^ K
-
 ---
 
 # Critical Habits for Teams
@@ -323,15 +324,11 @@ Time: 5 minutes
 * Code Review
 * Pairing
 
-^ K
-
 ---
 
 # Code Review
 
 * Max 90 minutes in one setting
-
-^ K
 
 ---
 
@@ -343,8 +340,6 @@ Time: 5 minutes
 * Observer - reviews each line
 * Roles switch frequently
 
-^ J
-
 ---
 
 # Types of Pairing
@@ -353,7 +348,7 @@ Time: 5 minutes
 * Expert-novice
 * Novice-novice
 
-^ J
+
 
 ^ When experts pair, work gets done quickly, new innovation not always obtained, depending on skill overlap because not questioning accepted standards of doing things.
 
@@ -363,12 +358,13 @@ Time: 5 minutes
 
 ---
 
+
+---
+
 # Visualization of Work
 
 * Bug/issue queue
 * Kanban
-
-^ K
 
 ---
 
@@ -379,7 +375,7 @@ Time: 5 minutes
  * Minimize 'pushing'
 * Team sync
 
-^ J
+
 
 ---
 
@@ -392,7 +388,7 @@ Work that is
 * organized
 * moves from one state to another
 
-^ J
+
 
 ---
 
@@ -401,7 +397,7 @@ Work that is
 * Work in Progress
  * work that has had money or people applied to it.
 
-^ J
+
 
 ---
 
@@ -415,7 +411,7 @@ Work that is
 * priority
 * owner
 
-^ J
+
 
 ---
 
@@ -425,7 +421,7 @@ Work that is
 * Can you do anything with it?
 * What is the next step?
 
-^ J
+
 
 ---
 
@@ -435,7 +431,7 @@ Work that is
 * Larger in scope
 * May be comprised of more than one task
 
-^ J
+
 
 ---
 
@@ -448,7 +444,7 @@ Work that is
  * single point of knowledge (you) work
  * high priority task push from manager
 
-^ J
+
 
 ---
 
@@ -460,11 +456,11 @@ Work that is
  * dependent on SPOK - blocked by team
  * time dependent
 
-^ J
+
 
 ---
 
-# Team Exercise
+# Team Activity
 
 Discuss with your team:
 
@@ -485,7 +481,7 @@ Time: 15 minutes
 * Respect
 * Everyone is a leader
 
-^ K: Model what you're currently doing: how does work get done, what states do things get into, how do things get blocked
+^ Model what you're currently doing: how does work get done, what states do things get into, how do things get blocked
 ^ Everyone on the team is empowered to pull things, to suggest change, to create their stories
 
 ---
@@ -498,7 +494,7 @@ Time: 15 minutes
 * Make policies explicit
 * Implement feedback loops
 
-^ K
+
 
 ---
 
@@ -508,7 +504,7 @@ Time: 15 minutes
 * Alignment
 * Coherence
 
-^ K (tie back to Fluxx)
+ (tie back to Fluxx)
 
 ---
 
@@ -516,7 +512,7 @@ Time: 15 minutes
 
 * Pull (don't push)
 
-^ K
+
 
 ---
 
@@ -525,7 +521,7 @@ Time: 15 minutes
 * Monitor/measure/report
 * Incremental change
 
-^ K
+
 
 ---
 
@@ -534,7 +530,7 @@ Time: 15 minutes
 * Document processes
 * Group signoff
 
-^ K
+
 
 ---
 
@@ -543,7 +539,27 @@ Time: 15 minutes
 * Collaboration
 * Retrospectives
 
-^ K 
+---
+
+# Objectives
+
+* Defined by the team. Not management.
+* Defined by the team. Not individuals.
+* Everyone has voice, opportunity to speak.
+
+---
+
+# Team Activity
+
+Talk through workflow for tasks for your team. How will you figure out what work needs to be done, who will work on the work, and when it is done. Use postits to mock up a legend for types of work items. Use pad to mock up your work items board. Use blue tape to mark off lanes. 
+
+Time: 30 minutes
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
+
+---
+
+# Affinity
 
 ---
 
@@ -558,8 +574,6 @@ Time: 15 minutes
  * Test and Build
  * Monitoring
 
-^ J
-
 ---
 
 # Local Development Environment (LDE)
@@ -567,7 +581,7 @@ Time: 15 minutes
 * Consistent set of tools across the team
 * Ability to quickly onboard new engineers
 
-^ K
+
 
 ---
 
@@ -580,15 +594,13 @@ Time: 15 minutes
  * ChefSpec, ServerSpec
 * Git
 
-^ K
+
 
 ---
 
 # Configuration Management
 
 * Process of identifying, managing, monitoring, and auditing a product through its entire life including the processes, documentation, people, tools, software, and systems.
-
-^ J
 
 ---
 
@@ -599,7 +611,6 @@ Time: 15 minutes
 * Integrity checking
 * Collaboration
 
-^ J
 
 ---
 
@@ -611,7 +622,7 @@ Time: 15 minutes
 * Accessible
 * Versioned
 
-^ K (artifactory, nexus, yum, package.io, rubbygems)
+ (artifactory, nexus, yum, package.io, rubbygems)
 
 ---
 
@@ -626,7 +637,6 @@ Password: chef
 
 sudo yum install nano
 
-^ K Add bitly links to slide 
 
 ---
 
@@ -638,7 +648,21 @@ Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ K
+
+
+---
+
+# Team Activity
+
+In pairs, discuss your current work environment. 
+
+* Who are the members of your team (at work)?
+* Who are the people who have commit access?
+* What's the flow of code from design to deploy?
+
+While one person shares their environment, the other person should draw a diagram to represent the information shared. Use circles to represent people, triangles to represent code repos, and rectangles to represent infrastructure. Use arrows to represent relationships and flow.
+
+Time: 30 minutes
 
 ---
 
@@ -648,7 +672,6 @@ Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat2.jpg)
 
-^ J
 
 ---
 
@@ -660,7 +683,7 @@ Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ J BEFORE LUNCH
+
 
 ---
 
@@ -670,24 +693,6 @@ Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat_asleep.jpg)
 
-^ K 
-
----
-
-# git pull
-
-git pull REMOTE
-
-^ K 
-
-
----
-# git push remote branch
-
-* transfer commits from a local repo to a remote repo.
-* counterpart to git fetch
-
-^ K
 
 ---
 
@@ -695,7 +700,7 @@ git pull REMOTE
 
 * Aggregate of applications, configurations, access control, data, compute nodes, network, storage, processes, and people.
 
-^ J
+
 
 ---
 
@@ -703,7 +708,7 @@ git pull REMOTE
 
 * Systems that reduce the burden on people to manage services and increase the quality, accuracy and precision of a service to the consumers of a service
 
-^ J
+
 
 ---
 
@@ -715,13 +720,13 @@ git pull REMOTE
 * Salt
 * CFEngine
 
-^ J
+
 
 ---
 
 # Introduction to Chef
 
-^ J, Baking Cookies
+, Baking Cookies
 
 ---
 
@@ -942,7 +947,7 @@ Example:
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat3.jpg)
 
-^ J
+
 
 ---
 
@@ -952,7 +957,7 @@ Time: 30 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
-^ J
+
 
 ---
 
@@ -1124,7 +1129,7 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat5.jpg)
 
-^ J
+
 
 ---
 
@@ -1142,7 +1147,7 @@ Time: 10 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
 
-^ J
+
 
 
 ---
@@ -1165,13 +1170,13 @@ Time: 20 minutes
 
 [^2]:Lam, Yvonne. 'Sysadvent: Day 5 - How To Talk About Monitors, Tests, And Diagnostics'. Sysadvent.blogspot.com. N.p., 2014. Web. 26 May 2015.
 
-^ J
+
 
 ---
 
 # [fit] Measuring Impact and Value of Change
 
-^ K
+
 
 ---
 
