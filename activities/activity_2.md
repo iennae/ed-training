@@ -1,4 +1,4 @@
-# Team Activity 2
+## Team Activity 2
 
 ### Careless Conversations (inspired by Alan Cyment)
 

@@ -1,4 +1,4 @@
-# Team Activity 3
+## Team Activity 3
 
 Discuss with your team:
 

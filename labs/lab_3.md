@@ -21,6 +21,7 @@ You can learn more about these supported workflows at this Chef RFC: https://git
 1. Monolithic Workflow - 1 chef-repo containing everything that maps to 1 repo in source control.
 2. 1 cookbook per repo + policy only chef-repo. 
 
+
 ```
  cd ~/wd
  chef generate repo ed-lab3
@@ -28,8 +29,8 @@ You can learn more about these supported workflows at this Chef RFC: https://git
  git init .
  git add .
  git commit -m "Initial creation of chef repo"
- 
- ```
+
+```
 
 Save the changes and commit back to the ed-lab3 repo created.
 

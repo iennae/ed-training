@@ -1,3 +1,4 @@
+
 #### Creation of MongoDB cookbook
 
 ```
@@ -5,19 +6,19 @@
  git pull origin master
  chef generate cookbook mongodb
  cd ~/wd/ed-lab3/cookbooks/mongodb
- ```
+```
 
 #### Update kitchen.yml to use centos 6.5, docker
 
 #### Create template to hold the mongodb repo location
 
- ```
+```
  chef generate template mongodb.repo
- ```
+```
 
 #### Commit cookbook to source control
 
- ```
+```
  git add ~/wd/ed-lab3/cookbooks/mongodb
  git commit -m "creation of cookbook mongodb"
  git push origin master
@@ -44,4 +45,4 @@ gpgcheck=0
 enabled=1
 ```
 
-If you need further hints, you can check out this [working example](https://github.com/nathenharvey/install_mongo) of minimal requirements to install mongodb.
+If you need further hints, you can check out this [working example](https://github.com/nathenharvey/install_mongo)  https://github.com/nathenharvey/install_mongo of minimal requirements to install mongodb.

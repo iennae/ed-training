@@ -1,4 +1,4 @@
-# Team Activity 4
+## Team Activity 4
 
 Talk through workflow for tasks for your team. How will you figure out what work needs to be done, who will work on the work, and when it is done. Use postits to mock up a legend for types of work items. Use pad to mock up your work items board. Use blue tape to mark off lanes. 
 

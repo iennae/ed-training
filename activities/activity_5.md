@@ -1,4 +1,4 @@
-# Team Activity 5
+## Team Activity 5
 
 In pairs, discuss your current work environment. 
 
