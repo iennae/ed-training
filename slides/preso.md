@@ -22,13 +22,26 @@ footer: __**:sparkles:@sigje #effectivedevops:sparkles:**__
 
 ---
 
+# Katie Rose
+
+---
+
+# Jonathan Disher
+
+---
+
+# Ian Henry
+
+---
+
 # Communication
 
 * Jennifer Davis
-   Twitter: @sigje
+   Twitter: @sigje #effectivedevops
    Email: sparklydevops@gmail.com
-
-### Twitter: #effectivedevops
+* Katie Rose Twitter: @RealKatieRose
+* Jonathan Disher Twitter: @funjon
+* Ian Henry Twitter: @Eeyun___
 
 
 ---
@@ -40,40 +53,13 @@ footer: __**:sparkles:@sigje #effectivedevops:sparkles:**__
   * What would you like to see more/less of?
   * Was there anything you found unclear?
 
-
 ---
 
 # Schedule
 
-* Introduction to teams, devops principles
-* 10:30-11:00am Morning Break - 
-* Visualization of work, Git, Infrastructure automation
-* 12:30-1:30pm Lunch - 
-
----
-
-# Schedule
-
-* Testing infrastucture automation and other changes
-* 3:00-3:30pm Afternoon Break - 
-* Measuring, monitoring, and wrap-up
-
----
-
-# Schedule
-
-* Introduction to teams, devops principles
-* 10:30-11:00am Morning Break - 
-* Visualization of work, Git, Infrastructure automation
-* 12:30-1:30pm Lunch - 
-
----
-
-# Schedule
-
-* Testing infrastucture automation and other changes
-* 3:00-3:30pm Afternoon Break - 
-* Measuring, monitoring, and wrap-up
+Morning Break: 10:30 - 11:00am
+Lunch: 12:30 - 1:30pm
+Afternoon Break: 3:00 - 3:30pm
 
 ---
 
@@ -102,7 +88,9 @@ Access Code:
  * Skills? Gaps in skills?
   * git, chef, docker, continuous integration, continuous delivery
 
-Time: 20 minutes
+http://goo.gl/forms/M2bvntFSYqxtnIzb2
+
+Time: 25 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
@@ -257,6 +245,14 @@ Anita Woolley and Thomas Malone
 * Defined beliefs
 * Empowered
 
+---
+
+# Diversity in Teams
+
+* Professional
+* Personal
+* Goals
+* Cognitive Styles
 
 ---
 
@@ -292,11 +288,53 @@ Time: 5 minutes
 
 ---
 
+# Shared stories
+## articulate values and ideas.
+
+![](http://i1.mirror.co.uk/incoming/article816835.ece/ALTERNATES/s615/Glastonbury+Tor+in+Somerset)
+
+---
+
+# Shared stories
+## explain historical significance.
+
+![](http://www.austinisd.org/sites/default/files/dept/dre/images/ask-evaluator-banner.jpg)
+
+---
+
+# Shared stories
+## passing knowledge
+
+![](http://uploads6.wikiart.org/images/norman-rockwell/the-gossips.jpg!Blog.jpg)
+
+[^1]: Norman Rockwell (1894-1978), “The Gossips,” 1948. Painting for “The Saturday Evening Post” cover, March 6, 1948.
+
+---
+
+# Shared stories
+## influence community.
+
+---
+
+# Shared stories
+## cultivate empathy.
+
+---
+
 > A life becomes meaningful when one sees himself or herself as an actor within the context of a story.
 
 -- George Howard
 
 ^ Work is meaningful when people see themselves as active participants. Sharing story is critical part of building resilience.
+
+---
+
+# Mindsets 
+
+* Fixed
+* Growth
+
+![fit](http://img.lum.dolimg.com/v1/images/Stormtroopers_f36ff76a.jpeg?region=1%2C0%2C1534%2C863&width=1200)
 
 ---
 
@@ -344,25 +382,70 @@ Time: 5 minutes
 
 ^ When novices pair, can work together to learn and achieve more than a novice working on their own. If no understanding in pair, and fire-fighting schedules can lead to poor practices implemented into production higher technical debt.
 
+---
 
+# Katie Rose preso
 
 ---
 
-# Visualization of Work
+# Visualizing Work
 
-* Bug/issue queue
-* Kanban
+* Break down rigid single points of knowledge failure
+* Reduce Development friction
+* Eliminate dupicate efforts
+
+---
+
+# A solution
+
+* Team kanban board
+* Commitments to incremental improvements
 
 ---
 
 # Factors for Success
 
-* Management buy in
- * Training
- * Minimize 'pushing'
-* Team sync
+* management buy in
+ * training
+ * effort to minimize "pushing"
+* weekly team syncs
+* proximity of team
 
+---
 
+# Prepping for Success
+
+* Environment
+* Values
+* Desire
+* Motivation
+* Connectedness
+
+---
+
+# Team versus Individual 
+
+---
+
+# Objectives
+
+* Defined by the team. Not management.
+* Defined by the team. Not individuals.
+* Everyone has voice, opportunity to speak.
+
+---
+
+# As a team... 
+
+* Discuss objectives.
+* Describe work.
+* Define lanes.
+* Define a task.
+* Define a project. 
+
+---
+
+# Elect a Champion
 
 ---
 
@@ -376,15 +459,12 @@ Work that is
 * moves from one state to another
 
 
-
 ---
 
 # WIP
 
 * Work in Progress
  * work that has had money or people applied to it.
-
-
 
 ---
 
@@ -398,8 +478,6 @@ Work that is
 * priority
 * owner
 
-
-
 ---
 
 # Task Handling
@@ -408,8 +486,6 @@ Work that is
 * Can you do anything with it?
 * What is the next step?
 
-
-
 ---
 
 # Projects
@@ -417,8 +493,6 @@ Work that is
 * Same requirements as a task
 * Larger in scope
 * May be comprised of more than one task
-
-
 
 ---
 
@@ -443,8 +517,6 @@ Work that is
  * dependent on SPOK - blocked by team
  * time dependent
 
-
-
 ---
 
 # Team Activity 3
@@ -458,6 +530,52 @@ Discuss with your team:
 Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
+---
+
+# Kanban is a system.
+
+* Visual process management
+ * what to do
+ * when to do it
+ * how much to do
+
+---
+
+# Kanban is a method.
+
+* incremental, evolutionary process improvement
+
+---
+
+# 3 principles
+
+* Current Process
+* Incremental, evolutionary change
+* Respect
+
+---
+
+# Current Process
+
+* Do you know what the current process is?
+* Is it documented? Is it explicit? Is it clear?
+* Has it been evaluated with the team?
+
+---
+
+# Incremental Evolutionary Change
+
+* How are you measuring current process?
+* Is the value clearly understood?
+ * Is work defined in value or cost?
+
+---
+
+# Respect
+
+* Find the current value.
+* Not forceful in nature.
+* What people want versus how to get there
 
 ---
 
@@ -491,14 +609,12 @@ Time: 15 minutes
 * Alignment
 * Coherence
 
- (tie back to Fluxx)
 
 ---
 
 # Limit WIP
 
 * Pull (don't push)
-
 
 
 ---
@@ -526,13 +642,7 @@ Time: 15 minutes
 * Collaboration
 * Retrospectives
 
----
 
-# Objectives
-
-* Defined by the team. Not management.
-* Defined by the team. Not individuals.
-* Everyone has voice, opportunity to speak.
 
 ---
 
