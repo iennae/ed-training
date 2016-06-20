@@ -7,6 +7,9 @@ footer: __**:sparkles:@sigje #effectivedevops:sparkles:**__
 # [fit] DevOps: Crafting Reusable Infrastructure Resources
 #### Jennifer Davis 
 
+Network Name: WPOC_WiFi
+Access Code:  velocity2016
+
 ---
 
 # Jennifer Davis
@@ -65,8 +68,8 @@ Afternoon Break: 3:00 - 3:30pm
 
 # Network Connectivity
 
-Network Name: 
-Access Code: 
+Network Name: WPOC_WiFi
+Access Code:  velocity2016
 
 
 ---
