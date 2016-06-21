@@ -265,6 +265,8 @@ platforms:
       
 suites:
   - name: default
+    run_list:
+      - recipe[app::default]
     attributes:
 
 ``` 
@@ -384,7 +386,7 @@ network:
     - ["forwarded_port", {guest: 80, host: 80}]
 
 provisioner:
-  name: policyfile_zero
+  name: chef_zero
 
 ## require_chef_omnibus specifies a specific chef version to install. You can
 ## also set this to `true` to always use the latest version.
@@ -397,8 +399,11 @@ platforms:
     driver_config:
       forward:
       - 80:80
+      
 suites:
   - name: default
+    run_list:
+      - recipe[app::default]
     attributes:
 
 ```
