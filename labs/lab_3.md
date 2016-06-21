@@ -1,12 +1,35 @@
+## Update Chef DK
+
+```
+curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk
+```
+
 # Examine .gitconfig
 
 ## Git Aliases
 
-You can create aliases for frequently used commands. I use 
+You can create aliases for frequently used commands. I use the alias git graph in order to get a nice git log output in combination with using git color features.
 
-git graph in order to get a nice git log output in combination with using git color features.
-
+```
 git config --global alias.graph log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)(%an)%Creset' --abbrev-commit --date=relative
+```
+
+The --graph option creates a text based graphical representation of the commit history.
+
+With the --pretty flag, you can specify a formating string.
+
+The format string allows us to focus on what we want to see when looking at the history of commits. In this alias, the symbols translate to showing us the following information in the specific colors.
+
+```
+%h: abbreviated commit hash
+%d: ref names
+%s: subject
+%cr: committer date, relative
+%an: author name
+
+```
+
+Finally --date=relative shows dates relative to the current time, e.g. “2 hours ago”.
 
 Git color allows you to configure your terminal to improve the terminal output of git commands.
 
@@ -36,6 +59,10 @@ My view when using git graph:
     changed = green
     untracked = red
 ```
+
+Examining dotfiles repos is very instructive in learning new options to improve your experience.
+
+* Fletcher Nichols - https://github.com/fnichol/dotfiles
 
 # Setup a Chef Repository
 

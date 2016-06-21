@@ -1222,14 +1222,23 @@ Time: 30 minutes
 # Integration Tests
 
 * ServerSpec
+* InSpec
 
 ---
 
 # Rubocop
 
 * Ruby linter
+* Analyzes source code to verify the syntax and structure of our cookbooks.
 * [Ruby style guide](https://github.com/bbatsov/ruby-style-guide)
 * Included with ChefDK
+
+---
+
+# Why
+
+* identify simple errors early
+* improve the review process by eliminating stylistic issues
 
 ---
 
@@ -1253,6 +1262,16 @@ CWCWCCCC
 * `W` means a warning
 * `E` means an error
 * `F` means an fatal error
+
+---
+
+# Rubocop Cops
+
+* Lint
+* Rails
+* Style
+
+Example: rubocop --lint.
 
 ---
 
@@ -1345,6 +1364,104 @@ app::default
 Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 1 example, 0 failures
 ```
+
+---
+
+# InSpec
+
+* infrastructure specification
+* open-source testing framework for infrastructure
+* human and machine readable 
+* compliance, security, and policy requirements
+* Based off of ServerSpec
+
+---
+
+# InSpec Example
+
+```
+describe service 'ssh-agent' do
+  it { should be_running }
+end
+```
+
+---
+
+# InSpec Example Run
+
+```
+$ inspec exec test.rb
+.
+
+Finished in 0.00901 seconds (files took 0.98501 seconds to load)
+1 example, 0 failures
+```
+
+---
+
+# InSpec Remote Run
+
+```
+$ inspec exec test.rb -i ~/.aws/YOUR.pem -t ssh://ec2-user@54.152.7.203
+```
+
+---
+
+# InSpec Remote Run on Windows
+
+```
+$ inspec exec test.rb -t winrm://Admin@192.168.1.2 --password super
+```
+
+---
+
+# InSpec Docker Containers
+
+```
+$ inspec exec test.rb -t docker://3dda08e75838
+```
+
+---
+
+# More info on InSpec
+
+https://github.com/chef/inspec/blob/master/docs/ctl_inspec.rst
+
+---
+
+# InSpec Audit Rules 
+
+* lots of resources to facilitate auditing nodes
+
+---
+
+# InSpec host resource example
+
+```
+describe host('example.com', port: 80, proto: 'tcp') do
+  it { should be_reachable }
+end
+```
+
+---
+
+# InSpec login_defs resource example
+
+```
+describe login_defs do
+  its('PASS_MAX_DAYS') { should eq '180' }
+  its('PASS_MIN_DAYS') { should eq '1' }
+  its('PASS_MIN_LEN') { should eq '15' }
+  its('PASS_WARN_AGE') { should eq '30' }
+end
+
+```
+
+---
+
+# InSpec Reference
+
+https://docs.chef.io/inspec_reference.html
 
 ---
 

@@ -1,10 +1,5 @@
 #  Supermarket
 
-## Update Chef DK
-
-```
-curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk
-```
 
 
 Browse to the supermarket website at supermarket.chef.io.
