@@ -959,6 +959,9 @@ A resource is a statement of policy that:
 
 # Review of Day 1
 
+Slides, Labs, Activities 
+* http://bit.ly/28Mu8fe
+
 ---
 
 # Schedule
@@ -1459,9 +1462,15 @@ end
 
 ---
 
-# InSpec Reference
+# InSpec References
 
-https://docs.chef.io/inspec_reference.html
+* InSpec Reference Guide
+ * https://docs.chef.io/inspec_reference.html
+* Windows infrastructure testing using InSpec 
+ * http://datatomix.com/?p=236
+ * http://datatomix.com/?p=238
+* Example of SSH 
+ * https://github.com/dev-sec/tests-ssh-hardening/blob/master/controls/ssh_spec.rb
 
 ---
 
@@ -1477,7 +1486,7 @@ https://docs.chef.io/inspec_reference.html
 
 # Lab 6
 
-Time: 10 minutes
+Time: 20 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
@@ -1493,7 +1502,7 @@ Time: 10 minutes
 
 # Lab 7
 
-Time: 20 minutes
+Time: 30 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
