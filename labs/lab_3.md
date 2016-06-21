@@ -64,6 +64,12 @@ Examining dotfiles repos is very instructive in learning new options to improve 
 
 * Fletcher Nichols - https://github.com/fnichol/dotfiles
 
+Example from Ian Henry
+
+```
+graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+```
+
 # Setup a Chef Repository
 
 Before starting any work in this lab, make sure that you read through the entire requirements as a team. Define which items are tasks, which are dependent tasks, and what tasks could potentially cause conflicts in your repository. 
@@ -261,16 +267,7 @@ suites:
   - name: default
     attributes:
 
-```
-
-```
-platforms:
-  - name: centos-6.5
-    driver_config:
-      forward:
-      - 80:80
-```
- 
+``` 
 
 `kitchen login ` and verify on the docker image directly. 
 
