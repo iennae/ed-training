@@ -1370,7 +1370,7 @@ Chef delivery versus Jenkins!
 
 ---
 
-# [fit] Introduction to Lab 8 
+# [fit] Introduction to Lab 8
 
 [Lab 8](https://github.com/iennae/ed-training/blob/master/labs/lab_8.md)
 
@@ -1379,6 +1379,22 @@ Chef delivery versus Jenkins!
 ---
 
 # Lab 8
+
+Time: 30 minutes
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
+
+---
+
+# [fit] Introduction to Lab 9 
+
+[Lab 8](https://github.com/iennae/ed-training/blob/master/labs/lab_9.md)
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
+
+---
+
+# Lab 9
 
 Time: 20 minutes
 

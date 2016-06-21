@@ -1,59 +1,67 @@
-#  Supermarket
+#  Scaling
 
-## Update Chef DK
+## Adding complexity
 
-```
-curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk
-```
+Bump the metadata version information of your cookbook. 
 
+Update the `.kitchen.yml` in our app cookbook. 
 
-Browse to the supermarket website at supermarket.chef.io.
+To platforms section, add 
 
-![Go to Supermarket website](images/lab_8/1-supermarket_website.png "Visit the supermarket")
+  - name: ubuntu-16.04
 
-Create (or login to your existing) hosted chef/supermarket account.
+Note: We are not mapping local port 80 as we've already done that. You could map another port locally, or just use kitchen login to verify the setup.
 
-![Create a signup with a real email](images/lab_8/2-signup.png "Create a signup with a real email")
+* Converge kitchen
 
-Fill in the form with a real email address, as you will need to verify your account.
+* kitchen converge default-ubuntu-1604
 
-![Example of filled in form](images/lab_8/3-filled-signin.png "Filled in form")
-
-Check your email for the verification link.
-
-![Check email and click on the verification link.](images/lab_8/4-email-verification.png "Check email and click on the verification link.")
-
-Click on the verification link. This will generate your pemfile. Copy and save this pemfile to your node (and you may want to save this locally as well). The node will go away, this hosted chef account is yours free to do with as you wish.
-![Save your pemfile locally. This will be how your interact with Hosted Chef and Supermarket sites with this account!](images/lab_8/5-copy-save-pemfile.png "Save your pemfile locally. This will be how your interact with Hosted Chef and Supermarket sites with this account!")
-
-* [Link your Github accout to your Chef Supermarket account.](https://supermarket.chef.io/profile/link-github)
-
-* [From the chef contributing documentation](https://github.com/chef/chef/blob/master/CONTRIBUTING.md#contributor-license-agreement-cla)
-Licensing is very important to open source projects. It helps ensure the software continues to be available under the terms that the author desired.
-
-Chef uses the Apache 2.0 license to strike a balance between open contribution and allowing you to use the software however you would like to.
-
-The license tells you what rights you have that are provided by the copyright holder. It is important that the contributor fully understands what rights they are licensing and agrees to them. Sometimes the copyright holder isn't the contributor, such as when the contributor is doing work for a company.
-
-To make a good faith effort to ensure these criteria are met, Chef requires an Individual CLA or a Corporate CLA for contributions. This agreement helps ensure you are aware of the terms of the license you are contributing your copyrighted works under, which helps to prevent the inclusion of works in the projects that the contributor does not hold the rights to share.
-
-It only takes a few minutes to complete a CLA, and you retain the copyright to your contribution.
-
-* [Sign the individual contributor license agreement.](https://supermarket.chef.io/icla-signatures/new)
-
-* Fork cookbook.
-
-* Branch repo.
-
-* Pull Request or commit to your own artifact repository.
-
-[Stove](https://github.com/sethvargo/stove) 
+Error seen:
 
 ```
-$ stove login --username YOURUSERNAME --key ~/.chef/SUPERMARKET.pem
+
+           Chef::Exceptions::Package
+           -------------------------
+           httpd is a virtual package provided by multiple packages, you must explicitly select one
 ```
 
+Packages on debian systems will be different than on other systems.
 
+How can we solve this?
+
+* One mechanism is attribute driven
+
+In app cookbook, 
+
+```
+$ chef generate attribute default
+$  vi attributes/default.rb
+```
+
+Add to the file
+
+```
+case node['platform']
+when 'redhat', 'centos', 'scientific', 'fedora', 'oracle'
+  default['app']['apache2'] = 'httpd'
+when 'debian', 'ubuntu'
+  default['app']['apache2'] = 'apache2'
+else
+  default['app']['apache2'] = 'httpd'
+end
+```
+
+Update the install_apache.rb recipe.
+
+```
+package node['app']['apache2']
+
+service node['app']['apache2'] do
+  action [ :enable, :start ]
+end
+```
+
+Repeat this process for the mongodb cookbook. Check the [installation guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) for mongodb to see what requirements there are.
 
 
 

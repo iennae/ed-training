@@ -2,7 +2,7 @@
 
 In this exercise, every team will create a list of what to measure in their own example projects.
 
-In a production environment, what would you need to monitor and measure to feel confident about apache, and mysql?
+In a production environment, what would you need to monitor and measure to feel confident about apache, mysql, and mongodb?
 
 
 ## Introduction to Nagios
