@@ -1,3 +1,42 @@
+# Examine .gitconfig
+
+## Git Aliases
+
+You can create aliases for frequently used commands. I use 
+
+git graph in order to get a nice git log output in combination with using git color features.
+
+git config --global alias.graph log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)(%an)%Creset' --abbrev-commit --date=relative
+
+Git color allows you to configure your terminal to improve the terminal output of git commands.
+
+My view when using git graph:
+
+![Git Graph Output includes color and improved log output](images/lab_3/1-git-graph-output.png "Git Graph Output includes color and improved log output")
+
+
+```
+[alias]
+  graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)(%an)%Creset' --abbrev-commit --date=relative
+[color]
+  ui = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+```
+
 # Setup a Chef Repository
 
 Before starting any work in this lab, make sure that you read through the entire requirements as a team. Define which items are tasks, which are dependent tasks, and what tasks could potentially cause conflicts in your repository. 

@@ -957,6 +957,76 @@ A resource is a statement of policy that:
 
 ---
 
+# Review of Day 1
+
+---
+
+# Schedule
+
+Morning Break: 10:30 - 11:00am
+Lunch: 12:30 - 1:30pm
+Afternoon Break: 3:00 - 3:30pm
+
+---
+
+# Foundations of DevOps
+
+---
+
+# Foundations of DevOps
+
+* Collaboration
+* Affinity
+* Tools
+* Scaling
+
+---
+
+# Collaboration
+
+> Individuals working together with shared interactions and input building towards a common goal.
+
+---
+
+# Affinity
+
+> Building inter-team relationships, empathy and trust in support of shared organizational and business goals.
+
+---
+
+# Tools
+
+> Accelerators of culture that if used effectively can enhance and support a culture of collaboration and affinity.
+
+---
+
+# Scaling 
+
+> Applying the considerations of collaboration, and tooling throughout various inflection points of an organizations lifecycle.
+
+---
+
+# Collaboration 
+
+* Shared stories
+* Cultivating Empathy
+* Diversity in teams
+
+---
+
+# Affinity
+
+---
+
+# Tools
+
+* Local development environment - Chef DK
+* Version Control - git
+* Infrastructure Automation - chef
+* Sandbox Automation - Test Kitchen 
+
+---
+
 # Test Kitchen
 
 * Included with Chef DK
@@ -1035,7 +1105,6 @@ Example:
 * kitchen test
 
 
-
 ---
 
 # [fit] Introduction to Lab 3 
@@ -1050,10 +1119,14 @@ Example:
 
 # Lab 3
 
-Time: 20 minutes
+Time: 30 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
+
+---
+
+# Runbook to Recipes
 
 ---
 
@@ -1084,7 +1157,7 @@ Translate a runbook for installing MongoDB into chef.
 
 [Lab 4](https://github.com/iennae/ed-training/blob/master/labs/lab_4.md)
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat4.jpg)
+![fit](images/rainbow_cat.png)
 
 
 ---
@@ -1103,7 +1176,7 @@ Translate our MongoDB cookbook from recipes into resources.
 
 [Lab 5](https://github.com/iennae/ed-training/blob/master/labs/lab_5.md)
 
-![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat5.jpg)
+![fit](images/standing_cat.png)
 
 
 ---
@@ -1388,7 +1461,7 @@ Time: 30 minutes
 
 # [fit] Introduction to Lab 9 
 
-[Lab 8](https://github.com/iennae/ed-training/blob/master/labs/lab_9.md)
+[Lab 9](https://github.com/iennae/ed-training/blob/master/labs/lab_9.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
 
