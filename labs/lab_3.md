@@ -447,4 +447,4 @@ You should have an updated _ed-lab3_ with
 
 
 
-Hints in the [Lab 3 background](assign_3_background.md)
+Hints in the [Lab 3 background](lab_background_3.md)
