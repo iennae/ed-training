@@ -387,7 +387,11 @@ Time: 5 minutes
 
 ---
 
-# Katie Rose preso
+# GridIronOps - Katie Rose
+
+--- 
+
+# Team Activity 2.5: Coat of Arms
 
 ---
 
@@ -533,6 +537,7 @@ Discuss with your team:
 Time: 15 minutes
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
+
 ---
 
 # Kanban is a system.
@@ -1052,6 +1057,27 @@ Time: 20 minutes
 
 ---
 
+# Introducing MongoDB
+
+---
+
+# MongoDB terminology
+
+* document - basic unit of data for MongoDB, ordered set of keys with associated values
+* collection - group of documents. analogous to table.
+* instance - MongoDB can host multiple independent databases, each of which can have its own collections.
+* _id - special key unique within a collection.
+
+---
+
+# MongoDB Shell
+
+* mongo 
+
+full featured JavaScript interpreter
+
+---
+
 # [fit] Introduction to Lab 4 
 
 Translate a runbook for installing MongoDB into chef.
@@ -1249,9 +1275,9 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 ---
 
-# [fit] Introduction to Lab 4 
+# [fit] Introduction to Lab 6
 
-[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/lab_4.md)
+[Lab 6](https://github.com/iennae/ed-training/blob/master/labs/lab_6.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat5.jpg)
 
@@ -1259,7 +1285,7 @@ Finished in 0.26429 seconds (files took 0.7166 seconds to load)
 
 ---
 
-# Lab 4
+# Lab 6
 
 Time: 10 minutes
 
@@ -1267,18 +1293,15 @@ Time: 10 minutes
 
 ---
 
-# [fit] Introduction to Lab 5 
+# [fit] Introduction to Lab 7 
 
-[Lab 4](https://github.com/iennae/ed-training/blob/master/labs/lab_4.md)
+[Lab 7](https://github.com/iennae/ed-training/blob/master/labs/lab_7.md)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
 
-
-
-
 ---
 
-# Lab 5
+# Lab 7
 
 Time: 20 minutes
 
@@ -1298,11 +1321,68 @@ Time: 20 minutes
 
 ---
 
-# Docker
+# Intro to Jenkins
 
-* Images
-* Registries
-* Containers
+* continuous integration server to build and test software.
+* integrated with source control (svn, git, ..)
+* integration with build systems
+* worker nodes to scale out systems
+* plugins (complex and community maintained)
+
+---
+
+# Layers of Infrastructure Management
+
+* Orchestration 
+ * Coordination
+ * Scheduling
+* Configuration packages and software
+* Provisioning
+
+---
+
+# Jenkins terminology
+
+* job - base unit of work. 
+
+---
+
+# General workflow
+
+* source control change 
+* jenkins polls source control, triggers a build
+* job runs, reports failure or success
+
+---
+
+# Difference between jenkins and chef
+
+* jenkins generally for build and test
+* chef for automation of configuration, node deploy to comply to policy
+
+Jenkins can deploy! Jenkins as coordinators.
+
+---
+
+# Closer comparison
+
+Chef delivery versus Jenkins!
+
+---
+
+# [fit] Introduction to Lab 8 
+
+[Lab 8](https://github.com/iennae/ed-training/blob/master/labs/lab_8.md)
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/cat7.jpg)
+
+---
+
+# Lab 8
+
+Time: 20 minutes
+
+![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/timer.png)
 
 ---
 
@@ -1496,14 +1576,13 @@ define servicedependency{
 
 * Manual, Automation to Continuous "X"
 * Be the storylistener and storyteller in your org
-* Effective Devops available in Early Release
+* Effective Devops 
 
 ---
 
 # [fit] Thank you! :heart:
 
 ### [@sigje](https://twitter.com/sigje)
-### [@beerops](https://twitter.com/beerops)
 
 ![fit](https://raw.githubusercontent.com/kdaniels/effective-devops/master/images/heart.jpg)
 
