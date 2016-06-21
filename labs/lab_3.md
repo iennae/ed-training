@@ -399,7 +399,7 @@ platforms:
     driver_config:
       forward:
       - 80:80
-      
+
 suites:
   - name: default
     run_list:
@@ -408,11 +408,10 @@ suites:
 
 ```
 
-Solve dependency constraints, install 3rd party cookbooks. `chef install` will have a `Policyfile.lock.json` as output. `kitchen converge` will set up docker container, install chef (if needed), and converge based on the runlist as descirbed in `Policyfile.rb`.
-
 ```
-chef install
-kitchen converge 
+
+$ kitchen create
+$ kitchen converge 
 
 ```
 
