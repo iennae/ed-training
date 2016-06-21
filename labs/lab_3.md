@@ -269,13 +269,9 @@ suites:
 
 ``` 
 
-`kitchen login ` and verify on the docker image directly. 
-
-
 ```
-chef install
-kitchen converge 
-
+$ kitchen converge 
+$ kitchen login
 ```
 
 How do you know if your recipe worked? Kitchen converge finishes without errors, and you have a port up and running. You can check by browsing directly to the node because you have set up port forwarding!
